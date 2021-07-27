@@ -1,0 +1,342 @@
+
+
+% This is my attempt on creating a custom beamer template with LaTEX.
+% Useful links:
+% https://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch
+% https://bitbucket.org/marczellm/beamerports/src/master/
+% https://www.r-bloggers.com/create-your-own-beamer-template/
+% https://www.overleaf.com/latex/examples/example-custom-font/htswqdkhqxjk
+
+
+\mode<presentation>
+
+
+% Requirements
+\RequirePackage{tikz}
+\RequirePackage{color}
+
+
+% Including Theme Files
+% Instead of writing this one style file one may decide to split it into four separate files.
+%\useinnertheme{daniels}
+%\useoutertheme{daniels}
+%\usecolortheme{daniels}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Color Theme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Defining Colors
+% For the university colors see: https://www.zuv.uni-freiburg.de/service/cd/cd-manual/farbwelt
+\definecolor{unirot}{RGB}{193, 0, 42}
+\definecolor{talklila}{RGB}{122, 6, 194} % #7a06c2
+\definecolor{talkgreen}{RGB}{5, 179, 49} % #05b331
+\definecolor{talkburgundy}{RGB}{219, 26, 68} % #db1a44
+\definecolor{talkorange}{RGB}{245, 162, 7} % #f5a207
+\definecolor{talkcyan}{RGB}{13, 207, 217} % #0dcfd9
+\definecolor{talkblue}{RGB}{60, 18, 227} % #3c12e3
+\definecolor{uniblau}{RGB}{0, 74, 153}
+\definecolor{unigrau}{RGB}{154, 155, 156}
+\definecolor{uniwappengrau}{RGB}{201, 202, 200}
+\definecolor{uniwappenblau}{RGB}{87, 129, 189}
+\definecolor{monxetuerkis}{RGB}{0, 232, 232}
+
+
+% Setting Colors
+\setbeamercolor*{title page header}{fg = unirot}
+\setbeamercolor*{title}{fg = white}
+\setbeamercolor*{author}{fg = white}
+\setbeamercolor*{date}{fg = white}
+\setbeamercolor*{item}{fg = black}
+\setbeamercolor{background canvas}{bg=}
+\setbeamercolor{frametitle}{fg = black}
+\setbeamercolor{section in toc}{fg = black}
+\setbeamercolor{section in toc shaded}{fg = black}
+\setbeamercolor{item}{fg = black}
+\setbeamercolor{subitem}{fg = black}
+\setbeamercolor{subsubitem}{fg = black}
+\setbeamercolor{description item}{fg = black}
+\setbeamercolor{caption}{fg = black}
+\setbeamercolor{caption name}{fg = black}
+\setbeamercolor{normal text}{fg = black}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Font Theme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usefonttheme{professionalfonts}%{default}
+\setbeamerfont{title}{size*={24.0}{6}}
+\setbeamerfont{subtitle}{size*={19.5}{6}}
+\setbeamerfont{date}{size*={14.0}{6}}
+\setbeamerfont{author}{size*={12.0}{12}}
+\setbeamerfont{frametitle}{size*={17.5}{6}}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Inner Theme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Within the Inner Theme elements inherent to a single frame are modified (e.g. the title page, certain blocks, etc.).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\useinnertheme{rounded}
+%\setbeamertemplate{itemize items}[triangle]
+%\setbeamertemplate{enumerate items}[default]
+
+
+% Items
+%\setbeamertemplate{items}[square]
+%\setbeamertemplate{sections/subsections in toc}[square]
+
+
+% Notes: Title Page Formatting
+% - The anchor for the \put command is the LOWER left-hand corner of the current slide
+% - The anchor for the \textblock* command is the UPPER left-hand corner of the current slide
+% - DO NOT invest time in implementing variable calculus in Latex - I spent hours on that and did not find anything better...
+
+
+
+
+
+%--------------------------------------------------
+%--  Title Slide
+%--------------------------------------------------
+
+
+%%% Defining the Rectangle and Logo Geometry for the Title Page
+% Blue Rectangle
+\pgfmathsetlengthmacro{\BlueRectangleWidth}{0.875\paperwidth} % <--- modify this, leave the other geometry parameters untouched
+% Logo Uni Freiburg
+\pgfmathsetlengthmacro{\LogoUniFreiburgWidth}{(\paperwidth-\BlueRectangleWidth)*1.47}
+\pgfmathsetlengthmacro{\LogoUniFreiburgX}{\paperwidth-\LogoUniFreiburgWidth} % 0.83\paperwidth
+\pgfmathsetlengthmacro{\LogoUniFreiburgY}{0.028\paperheight} % <--- modify this, leave the other geometry parameters untouched
+% White Rectangle
+\pgfmathsetlengthmacro{\WhiteRectangleY}{\LogoUniFreiburgY+(0.357*\LogoUniFreiburgWidth)}
+\pgfmathsetlengthmacro{\WhiteRectangleHeight}{0.036*\LogoUniFreiburgWidth}
+\pgfmathsetlengthmacro{\WhiteRectangleWidth}{1.0001*\BlueRectangleWidth}
+% Logo Physics Institute
+\pgfmathsetlengthmacro{\LogoPhysicsInstituteHeight}{0.85*\WhiteRectangleY}
+\pgfmathsetlengthmacro{\LogoPhysicsInstituteY}{0.5*(\WhiteRectangleY-\LogoPhysicsInstituteHeight)}
+\pgfmathsetlengthmacro{\LogoPhysicsInstituteX}{8.50}
+% Logo ERC
+\pgfmathsetlengthmacro{\LogoErcWidth}{(\paperwidth-\BlueRectangleWidth)*0.68} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\LogoErcX}{\BlueRectangleWidth+((\paperwidth-\BlueRectangleWidth-\LogoErcWidth)*0.5)}
+\pgfmathsetlengthmacro{\LogoErcY}{0.66*\paperheight} % <--- modify this, leave the other geometry parameters untouched
+% Logo MonXe
+\pgfmathsetlengthmacro{\LogoMonxeWidth}{(\paperwidth-\BlueRectangleWidth)*0.88} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\LogoMonxeX}{\BlueRectangleWidth+((\paperwidth-\BlueRectangleWidth-\LogoMonxeWidth)*0.5)}
+\pgfmathsetlengthmacro{\LogoMonxeY}{0.88*\paperheight} % <--- modify this, leave the other geometry parameters untouched
+% Logo DARWIN
+\pgfmathsetlengthmacro{\LogoDarwinWidth}{(\paperwidth-\BlueRectangleWidth)*0.92} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\LogoDarwinX}{\BlueRectangleWidth+((\paperwidth-\BlueRectangleWidth-\LogoDarwinWidth)*0.5)}
+\pgfmathsetlengthmacro{\LogoDarwinY}{0.525*\paperheight} % <--- modify this, leave the other geometry parameters untouched
+
+
+%%% Defining the Text Geometry for the Title Page
+\pgfmathsetlengthmacro{\TitleY}{0.42*(\paperheight-\WhiteRectangleHeight-\WhiteRectangleY)} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\SubtitleY}{\TitleY -7.50mm} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\DateY}{0.85*(\paperheight-\WhiteRectangleHeight-\WhiteRectangleY)} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\AuthorY}{(\paperheight-\WhiteRectangleY) +(0.26*\WhiteRectangleY)} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\AuthorX}{2*\LogoPhysicsInstituteX +2.25*\LogoPhysicsInstituteHeight} % <--- modify this, leave the other geometry parameters untouched
+
+
+%%% Setting up the Title Page Template
+\setbeamertemplate{title page}{
+    % Rectangles
+    \AddToShipoutPictureBG*{\put(0,0){{\textcolor{uniblau}{\rule{\BlueRectangleWidth}{\paperheight}}}}}
+    \AddToShipoutPictureBG*{\put(0,\WhiteRectangleY){{\textcolor{white}{\rule{\WhiteRectangleWidth}{\WhiteRectangleHeight}}}}}
+    % Logos
+    \AddToShipoutPictureBG*{\put(\LogoUniFreiburgX,\LogoUniFreiburgY){\includegraphics[width=\LogoUniFreiburgWidth]{images/uni_fr_logo.png}}}
+    %\AddToShipoutPictureBG*{\put(\LogoMonxeX,\LogoMonxeY){\includegraphics[width=\LogoMonxeWidth]{images/MonXe_logo_mod.png}}}
+    %\AddToShipoutPictureBG*{\put(\LogoErcX,\LogoErcY){\includegraphics[width=\LogoErcWidth]{images/logo_erc_crop.jpg}}}
+    %\AddToShipoutPictureBG*{\put(\LogoDarwinX,\LogoDarwinY){\includegraphics[width=\LogoDarwinWidth]{images/logo_darwin_dark.png}}}
+    \AddToShipoutPictureBG*{\put(\LogoPhysicsInstituteX,\LogoPhysicsInstituteY){\includegraphics[height=\LogoPhysicsInstituteHeight]{images/logo_physics_institute_transparent_crop_white.png}}}
+    % Title
+    \begin{textblock*}{\BlueRectangleWidth}(0.0mm,\TitleY)
+        \centering
+        \usebeamerfont{title}\textcolor{white}{\inserttitle}
+    \end{textblock*}
+    % Subtitle
+    \begin{textblock*}{\BlueRectangleWidth}(0.0mm,\SubtitleY)
+        \centering
+        \usebeamerfont{subtitle}\textcolor{white}{\insertsubtitle}
+    \end{textblock*}
+    % Date and Venue
+    \begin{textblock*}{\BlueRectangleWidth}(0.0mm,\DateY)
+        \centering
+        \usebeamerfont{date}\textcolor{white}{\insertdate}
+    \end{textblock*}
+    % Author
+    \begin{textblock*}{\BlueRectangleWidth}(\AuthorX,\AuthorY)
+        \usebeamerfont{author}\textcolor{white}{\insertauthor}
+    \end{textblock*}
+}
+
+
+
+
+
+%--------------------------------------------------
+%--  Chapter Slides
+%--------------------------------------------------
+
+
+%%% Defining the Geometry for the Chapter Slides
+\pgfmathsetlengthmacro{\ChapterRectangleHeight}{0.2*\paperheight} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\ChapterRectangleY}{(0.5*\paperheight)-(0.5*\ChapterRectangleHeight)} % <--- modify this, leave the other geometry parameters untouched
+%\newcommand{\ChapterTextSize}{19.5} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\ChapterTextSize}{19.5} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\ChapterTextY}{(\paperheight-\ChapterRectangleY-\ChapterRectangleHeight) +(0.5*\ChapterRectangleHeight) -(0.5*\ChapterTextSize)} % <--- modify this, leave the other geometry parameters untouched
+
+
+%%% Setting up the Chapter Slides
+\newcommand{\chapterslide}[1]{
+    % Rectangle
+    \AddToShipoutPictureBG*{\put(0,\ChapterRectangleY){{\textcolor{uniblau}{\rule{\paperwidth}{\ChapterRectangleHeight}}}}}
+    % Text
+    \begin{textblock*}{\paperwidth}(0.0mm,\ChapterTextY)
+        \centering
+        %\usebeamerfont{subtitle}\textcolor{unirot}{#1}
+        \textcolor{white}{\fontsize{\ChapterTextSize}{6} \selectfont #1}
+    \end{textblock*}
+}
+
+
+
+
+
+%--------------------------------------------------
+%--  Frame Numbers
+%--------------------------------------------------
+
+
+%%% Defining the Geometry for the Frame Numbers
+\pgfmathsetlengthmacro{\FrameNumberX}{0.685*\paperwidth} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\FrameNumberY}{0.890*\paperheight} % <--- modify this, leave the other geometry parameters untouched
+\pgfmathsetlengthmacro{\FrameNumberTextSize}{12.0} % <--- modify this, leave the other geometry parameters untouched
+%\pgfmathsetlengthmacro{\FrameNumberFrameSize}{\paperwidth-\FrameNumberX}
+\pgfmathsetlengthmacro{\FrameNumberFrameSize}{0.3*\paperwidth}
+
+
+%%% Setting up the Frame Numbers
+\newcommand{\framenumber}{
+    % Text
+    \begin{textblock*}{\FrameNumberFrameSize}(\FrameNumberX,\FrameNumberY)
+        \flushright
+        \textcolor{black}{\fontsize{\FrameNumberTextSize}{6} \selectfont \insertframenumber}
+    \end{textblock*}
+}
+
+
+
+
+
+%--------------------------------------------------
+%--  Summary Slide
+%--------------------------------------------------
+
+
+
+%%% geometry for the summary slide layout
+\pgfmathsetlengthmacro{\UpperRectangleHeight}{0.13\paperheight}
+\pgfmathsetlengthmacro{\UpperRectangleY}{\paperheight-\UpperRectangleHeight}
+\pgfmathsetlengthmacro{\LowerRectangleHeight}{0.065\paperheight}
+\pgfmathsetlengthmacro{\FrameNumberSummaryX}{0.895*\FrameNumberX}
+\pgfmathsetlengthmacro{\LowerRectangleWidth}{\FrameNumberSummaryX +0.322\paperwidth}
+\pgfmathsetlengthmacro{\LogoUniFreiburgWidthSummary}{0.08795\paperwidth}
+\pgfmathsetlengthmacro{\LogoUniFreiburgXSummary}{\LowerRectangleWidth -0.0255\paperwidth}
+\pgfmathsetlengthmacro{\LogoUniFreiburgYSummary}{0.003\paperheight}
+\pgfmathsetlengthmacro{\EmailSummaryY}{0.954*\paperheight}
+\pgfmathsetlengthmacro{\EmailSummaryX}{0.00*\paperwidth}
+
+
+%%% setting up the summary slide
+\newcommand{\summaryslide}[1]{
+    \AddToShipoutPictureFG*{\put(0,\UpperRectangleY){{\textcolor{uniblau}{\rule{\paperwidth}{\UpperRectangleY}}}}}
+    \AddToShipoutPictureFG*{\put(0,0){{\textcolor{uniblau}{\rule{\LowerRectangleWidth}{\LowerRectangleHeight}}}}}
+    \AddToShipoutPictureFG*{\put(\LogoUniFreiburgXSummary,\LogoUniFreiburgYSummary){\includegraphics[width=\LogoUniFreiburgWidthSummary]{images/uni_fr_logo.png}}}
+    \begin{textblock*}{\paperwidth}(0.035\paperwidth,0.042\paperheight)
+        \textcolor{white}{\usebeamerfont{subtitle}#1}
+    \end{textblock*}
+}
+
+
+%%% Setting up the Frame Numbers
+\newcommand{\framenumbersummaryslide}{
+    % Text
+    \begin{textblock*}{\FrameNumberFrameSize}(\FrameNumberSummaryX,\FrameNumberY)
+        \flushright
+        \textcolor{white}{\fontsize{\FrameNumberTextSize}{6} \selectfont \insertframenumber}
+    \end{textblock*}
+}
+
+
+%%% setting up the summary slide email address
+\newcommand{\summaryemail}[1]{
+    \begin{textblock*}{\LowerRectangleWidth}(\EmailSummaryX,\EmailSummaryY)
+        \centering
+        \textcolor{white}{\fontsize{\FrameNumberTextSize}{6} \selectfont #1}
+    \end{textblock*}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Outer Theme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Within the Outer Theme one defines how elements that are shown all over the presentation (e.g. headings, footings, page numbers, etc.) are displayeds.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Frame title
+%\defbeamertemplate*{frametitle}{daniels}[1][]
+%{
+%\vskip1cm%
+%  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+%  \begin{tikzpicture}
+%  \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
+%  \fill[orange] (0,0) rectangle(2.95,1.2);
+%  \fill[blue!50!cyan!80] (3.05,0) rectangle(\the\paperwidth,1.2);
+%   \ifx\insertframesubtitle\@empty%
+%      {\node[anchor=west, white,font=\large] at (3.2,0.61){\insertframetitle};}
+%      \else%
+%      {\node[anchor= west, white,font=\large] at (3.2,0.81){\insertframetitle};%
+%       \node[anchor= west, white,font=\small] at (3.2,0.41){\insertframesubtitle};}%
+%      \fi
+%  \end{tikzpicture}
+%  \end{beamercolorbox}
+%}
+
+% Slide Title
+\setbeamertemplate{frametitle}{
+    \begin{textblock*}{\paperwidth}(0.035\paperwidth,0.065\paperheight)
+        \usebeamerfont{subtitle}\insertframetitle
+    \end{textblock*}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{itemize items}[square]
+
+\mode<all>
