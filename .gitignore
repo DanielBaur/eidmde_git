@@ -13,3 +13,7 @@ resources/*
 #!vhdlstuff/die_stoppuhr__loesung/
 #!vhdlstuff/die_stoppuhr__vorlage/
 !resources/kuea16__k_urbanski_et_al__digitaltechnik.pdf
+!presentation/beamerthemedaniels.sty
+!presentation/eidmde_slides.pdf
+!presentation/eidmde_slides.tex
+!presentation/images
