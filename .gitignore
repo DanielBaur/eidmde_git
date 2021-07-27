@@ -3,7 +3,7 @@
 # exclude the contents copied into the Docker image
 #arduinostuff/*
 #vhdlstuff/*
-#presentation/*
+presentation/*
 resources/*
 
 
