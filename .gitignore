@@ -1,0 +1,15 @@
+
+
+# exclude the contents copied into the Docker image
+#arduinostuff/*
+#vhdlstuff/*
+#presentation/*
+resources/*
+
+
+# exceptions to the rule
+#!vhdlstuff/erste_schritte_in_vhdl__loesung/
+#!vhdlstuff/erste_schritte_in_vhdl__vorlage/
+#!vhdlstuff/die_stoppuhr__loesung/
+#!vhdlstuff/die_stoppuhr__vorlage/
+!resources/kuea16__k_urbanski_et_al__digitaltechnik.pdf
