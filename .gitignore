@@ -16,12 +16,12 @@ resources/*
 !presentation/images
 
 # exceptions: 'erste_schritte_in_vhdl__vorlage'
-!erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_a.vhd
-!erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_b.vhd
-!erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_c.vhd
-!erste_schritte_in_vhdl__vorlage/rtl/signal_mapping.ucf
-!erste_schritte_in_vhdl__vorlage/rtl/toplevel.vhd
-!erste_schritte_in_vhdl__vorlage/tb/testbench_kv.vhd
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_a.vhd
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_b.vhd
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_c.vhd
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/signal_mapping.ucf
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/toplevel.vhd
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_kv.vhd
 
 # exceptions: 'erste_schritte_in_vhdl_loesung'
 !erste_schritte_in_vhdl__loesung/rtl/kv_schaltung_a.vhd
