@@ -16,6 +16,7 @@ resources/*
 !presentation/images
 
 # exceptions: 'erste_schritte_in_vhdl__vorlage'
+!vhdlstuff/testfile2.txt
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_a.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_b.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_c.vhd
