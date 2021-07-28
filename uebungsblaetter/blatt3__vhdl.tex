@@ -30,9 +30,8 @@ Im Rahmen dieses Übungsblockes
 \end{itemize}
 
 
-Laden Sie sich dazu das Projekt
-\texttt{erste\_schritte\_in\_vhdl\_\_vorlage.tar}
-von der Adresse \url{https://ilias.uni-freiburg.de/goto.php?target=file_2288260_download&client_id=unifreiburg} (Ilias Seite)  herunter.
+Laden Sie sich dazu das Projekt \texttt{erste\_schritte\_in\_vhdl\_\_vorlage.tar.gz}
+von der Adresse \url{https://ilias.uni-freiburg.de/goto.php?target=file_2288260_download&client_id=unifreiburg} (Ilias Seite)  herunter und entpacken Sie es.
 Nach der Übung werden auch Lösungsvorschläge auf ILIAS veröffentlicht.
 
 
@@ -40,36 +39,37 @@ Nach der Übung werden auch Lösungsvorschläge auf ILIAS veröffentlicht.
 
 
 %------------------------------------------------------
-\exercise{ISE starten}{-1}
+\exercise{ISE unter Linux starten}{-1}
 %------------------------------------------------------
 
 
-Machen Sie sich mit dem \textit{Command Line Interface} (\textit{CLI}, \textit{Terminal}) der auf dem CIP-Pool-Rechner installierten Linux-Distribution vertraut. Starten Sie dann die \textit{ISE Design Suite} indem Sie entweder
+Machen Sie sich mit dem \textit{Command Line Interface} (\textit{CLI}, \textit{Terminal}) der auf dem CIP-Pool-Rechner installierten Linux-Distribution vertraut
+und starten sie die \textit{ISE Design Suite}:
 
 
 \begin{itemize}
-\setlength\itemsep{-25pt}
-
-
-\item ein Terminal öffnen und die folgenden Befehle ausführen,
+\setlength\itemsep{-\parskip}
+    \item Öffnen Sie ein Terminal und erstellen Sie das \texttt{bash}-Skript $\sim$\texttt{/startise.sh}:
 \begin{lstlisting}[language=bash]
+#!/bin/bash
+
 cd /mnt/ISE/14.7/ISE_DS
 export XILINXD_LICENSE_FILE=2100@license.physik.privat
 source settings64.sh
-ise
-\end{lstlisting}
-\vspace*{-1mm}
-
-
-\item oder ein entsprechendes \texttt{bash}-Skript erstellen.
-
-
+ise\end{lstlisting}
+    \vspace*{-6.0mm}
+    \item Machen Sie das Skript ausführbar und erzeugen Sie ein \texttt{alias}:\\
+    \$ \texttt{chmod +x }$\sim$\texttt{/startise.sh}\\
+    \$ \texttt{echo "alias sise='}$\sim$\texttt{/startise.sh'" >> ~/.bash\_aliases}\\[-3.0mm]
+    \item Sie können nun die \texttt{ISE Design Suite} starten:\\
+    \$ \texttt{sise}
 \end{itemize}
 
 
 
 
 
+\clearpage
 %------------------------------------------------------
 %------------------------------------------------------
 \exercise{Programmieren von kombinatorischer Logik in VHDL}{1}
@@ -78,12 +78,7 @@ ise
 %------------------------------------------------------
 
 
-Programmieren Sie die folgenden Gatter in VHDL.
-Vervollständigen Sie dazu zunächst das im Projekt bereits vorhandene And-Gatter und dessen
-testbench im tb Ordner. Simulieren Sie daraufhin zunächst das And-Gatter mit Isim.
-Legen Sie nun für jedes der weiteren Gatter in gleicher Weise eine Entity für das Gatter und dessen
-Simulation an und fügen diese .vhdl files zum Projekt hinzu. Simulieren Sie daraufhin alle Gatter.
-
+Programmieren Sie die folgenden Gatter in VHDL:
 
 \begin{center}
   \begin{tabular}{ccccc}
@@ -92,13 +87,20 @@ Simulation an und fügen diese .vhdl files zum Projekt hinzu. Simulieren Sie dar
     \texttt{AND}&\texttt{OR}&\texttt{NOT}&\texttt{XOR}&\texttt{NAND}\\
   \end{tabular}
 \end{center}
-%\clearpage
+
+Vervollständigen Sie dazu zunächst das im Projekt bereits vorhandene and-Gatter (\texttt{/rtl/and\_gate.vhd}) und die Gatter-testbench (\texttt{/tb/testbench\_gates.vhd}).
+Simulieren Sie daraufhin zunächst das And-Gatter mit \texttt{Isim}.
+Fügen Sie nun für jedes der weiteren Gatter in gleicher Weise ein Modul dem Projekt hinzu an und simulieren Sie das entsprechende Gatter.
+
+
+%------------------------------------------------------
+%------------------------------------------------------
 \exercise{Verketten von kombinatorischer Logik in VHDL}{2}
+%------------------------------------------------------
+%------------------------------------------------------
 
 
-In dieser Aufgabe sollen VHDL Module verkettet und mit dem Ergebniss einer direkten logischen Zuweisung verglichen werden. Die Entities für die beiden folgenden Aufgabenteile sind bereits als
-schaltung\_a.vhd und schaltung\_b.vhd im Projekt vorhanden.
-
+In dieser Aufgabe sollen VHDL-Module verkettet und mit dem Ergebniss einer direkten logischen Zuweisung verglichen werden.
 
 \begin{enumerate}[label=\alph*.)]
 
@@ -109,17 +111,17 @@ schaltung\_a.vhd und schaltung\_b.vhd im Projekt vorhanden.
     \includegraphics[width= 7cm]{./images/01301x01}
   \end{center}
 \vspace*{-25pt}
-Vervollständigen Sie dazu die im Projekt bereits vorhandene Datei schaltung\_a.vhd.
+Vervollständigen Sie dazu die im Projekt bereits vorhandene Datei \texttt{schaltung\_a.vhd}.
 
 
-\item Implementieren sie nun die selbe Funktionalität mithilfe der VHDL Signaloperatoren
+\item Implementieren sie nun die selbe Funktionalität mithilfe der VHDL-Signaloperatoren
   \texttt{and}, \texttt{or}, \texttt{nand}, \texttt{nor}, \texttt{xor}, \texttt{not}.
  indem Sie eine einzelne Signalzuweisung nutzen.
- Vervollständigen Sie dazu die Datei schaltung\_b.vhd.
+ Vervollständigen Sie dazu die Datei \texttt{schaltung\_b.vhd}.
 
 
-\item Simulieren Sie die beiden Module, indem Sie zunächst die Datei testbench\_schaltung.vhd
-vervollständigen und daraufhin das Ergebniss mit Isim betrachten.
+\item Simulieren Sie die beiden Schaltungsmodule, indem Sie zunächst die Datei \texttt{testbench\_schaltung.vhd}
+vervollständigen und daraufhin das Ergebniss mit \texttt{Isim} betrachten.
 
 
 \end{enumerate}
@@ -127,9 +129,11 @@ vervollständigen und daraufhin das Ergebniss mit Isim betrachten.
 
 
 
-
+\clearpage
+%------------------------------------------------------
 %------------------------------------------------------
 \exercise{Ein erstes Leuchten}{3}
+%------------------------------------------------------
 %------------------------------------------------------
 
 
