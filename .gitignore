@@ -1,14 +1,26 @@
 
 
 # excluding whole directories to avoid uploading unnecessary files to the online repository
-#arduinostuff/*
-#uebungsblaetter/*
+arduinostuff/*
+uebungsblaetter/*
 vhdlstuff/*
 presentation/*
 resources/*
 
 # exceptions: resources
 !resources/kuea16__k_urbanski_et_al__digitaltechnik.pdf
+
+# exceptions: presentation
+!uebungsblaetter/blatt1__loetpraxis.tex
+!uebungsblaetter/blatt2__bool.tex
+!uebungsblaetter/blatt3__vhdl.tex
+!uebungsblaetter/blatt4__arduino.tex
+!uebungsblaetter/blatt1__loetpraxis.pdf
+!uebungsblaetter/blatt2__bool.pdf
+!uebungsblaetter/blatt3__vhdl.pdf
+!uebungsblaetter/blatt4__arduino.pdf
+!uebungsblaetter/preamble.tex
+!uebungsblaetter/images/
 
 # exceptions: presentation
 !presentation/beamerthemedaniels.sty
