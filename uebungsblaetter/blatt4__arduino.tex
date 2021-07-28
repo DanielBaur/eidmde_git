@@ -1,0 +1,108 @@
+
+
+\documentclass[12pt]{article}
+\usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom =30mm]{geometry}
+\input{preamble}
+%\fancyhead[R]{{\large \textbf{Blatt 4}}}
+
+
+\begin{document}
+\head{2020}{4}{Daniel Baur}
+
+
+
+
+
+%------------------------------------------------------
+%------------------------------------------------------
+\part*{Mikrocontrollerprogrammierung}
+%------------------------------------------------------
+%------------------------------------------------------
+
+
+Mit den folgenden Aufgaben werden Sie Einblicke in die Programmierung von Mikrocontrollern erhalten. Dabei werden Sie mit einem Arduino UNO-Board
+\vspace*{-5pt}
+\begin{itemize}
+    \setlength\itemsep{-5pt}
+    \item analoge Sensorsignale auslesen,
+    \item digital verarbeiten
+    \item und zur Steuerung externer Hardware verwenden.
+\end{itemize}
+\vspace*{1.0cm}
+
+
+
+
+
+%------------------------------------------------------
+\exercise{Arduino-IDE öffnen und testen}{-1}
+%------------------------------------------------------
+
+
+Loggen Sie sich als \texttt{arduinokurs} (statt mit ihrer RZ-Kennung) ein und öffnen Sie die \textit{Arduino-IDE} entweder über die Desktop-Verknüpfung oder indem Sie den Befehl\\
+
+\hspace{1.0cm}\texttt{\$ arduino}\\
+
+ausführen. Verbinden Sie dann das Arduino-Board per USB-Kabel mit dem Rechner und programmieren Sie den Mikrokocontroller mit dem Beispiel-\textit{Sketch} \texttt{Blink}, wobei Sie die LED jeweils für $5\,\mathrm{s}$ aufleuchten lassen.
+
+%\the\linewidth
+
+
+
+%------------------------------------------------------
+\exercise{Joystick-Output}{-1}
+%------------------------------------------------------
+
+
+Erstellen Sie eine Schaltung, mit der Sie den Output des 3D-Joysticks verarbeiten können: Mit Betätigen des Druckschalters soll eine LED zum Leuchten gebracht werden. Bewegungen des Joysticks in der x- bzw. y-Achse sollen auf die Rotation des Servomotors bzw. die Anzeige des Seven Segment LED-Displays übertragen werden.
+
+
+
+
+
+%------------------------------------------------------
+\exercise{LED-Würfel}{1}
+%------------------------------------------------------
+
+
+Setzen Sie einen digitalen Würfel in der Arduino-Hardware um: 
+\begin{itemize}
+    \item Machen Sie sich zuerst mit der Verwendung des \texttt{Seven-Segment-Displays} vertraut. Installieren Sie dafür die \texttt{SevSeg}-Bibliothek und bringen Sie alle Segmente zum Leuchten.
+    \item Implementieren Sie danach zwei Tasten, die es Ihnen ermöglichen, zwischen verschiedenen Würfelvarianten zu wechseln (sodass Sie etwa sowohl mit einem sechs-, zehn- oder auch mit einem zwanzigseitigen Würfel würfeln können) und mit dem ausgewählten Würfel zu würfeln.
+    \item Stellen Sie abschließend Würfel und Würfelergebnis auf dem Display dar.
+\end{itemize}
+\textit{Hinweis: Mit den zwölf Pins des Seven-Segment-Displays sind bereits alle digitalen Pins des Arduino-Boards belegt. Entsprechend müssen die Schaltersignale als analoge Eingänge ausgelesen werden. Eine Beispiellösung finden Sie etwa unter}
+\url{https://github.com/DanielBaur/digital_die}.
+
+
+
+
+
+
+%------------------------------------------------------
+\exercise{Miniprojekt}{1}
+%------------------------------------------------------
+
+
+Wählen Sie einen beliebigen Sensor sowie ein beliebiges Peripheriegerät aus, welches Sie gern in Abhängigkeit des Sensorinputs steuern würden. Überlegen Sie sich entsprechend dazu ein eigenes Kurzprojekt. Laden Sie den (ausführlich und lesbar kommentierten) Code samt Fotos zur Dokumentation in den ILIAS-Kursraum und erläutern Sie Ihr Projekt Ihren Kommilliton*innen kurz.
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
