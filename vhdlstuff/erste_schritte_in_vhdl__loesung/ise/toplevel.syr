@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> 
 Reading design: toplevel.prj
@@ -107,9 +107,14 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd" in Library work.
-Architecture behavioral of Entity schaltung_b is up to date.
-Compiling vhdl file "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/toplevel is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/toplevel/behav is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/schaltung_b is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd".
+WARNING:HDLParsers:3607 - Unit work/schaltung_b/Behavioral is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd".
+Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd" in Library work.
+Entity <schaltung_b> compiled.
+Entity <schaltung_b> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd" in Library work.
 Entity <toplevel> compiled.
 Entity <toplevel> (Architecture <behav>) compiled.
 
@@ -138,12 +143,12 @@ Entity <schaltung_b> analyzed. Unit <schaltung_b> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <schaltung_b>.
-    Related source file is "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd".
+    Related source file is "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd".
 Unit <schaltung_b> synthesized.
 
 
 Synthesizing Unit <toplevel>.
-    Related source file is "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd".
+    Related source file is "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd".
 WARNING:Xst:647 - Input <SWITCHES<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2565 - Inout <LEDS<0>> is never assigned.
 WARNING:Xst:2565 - Inout <LEDS<1>> is never assigned.
@@ -292,15 +297,15 @@ Delay:               8.957ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 2.81 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 2.58 secs
  
 --> 
 
 
-Total memory usage is 512580 kilobytes
+Total memory usage is 512564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

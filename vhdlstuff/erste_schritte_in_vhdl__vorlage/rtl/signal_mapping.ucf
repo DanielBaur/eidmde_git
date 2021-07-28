@@ -1,7 +1,8 @@
 #switches
 NET "SWITCHES<0>"  LOC = "F12"  ;
-#vervollständigen bitte (siehe userguide)!
-
+-- Complete the list of switches.
+ 
 #leds
 NET "LEDS<0>"  LOC = "K12";
-#verfollständigen bitte (siehe userguide)!
+-- Complete the list of LEDs.
+

@@ -1,5 +1,16 @@
+
+-- ----------------------------------------
+-- libraries
+-- ----------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+
+
+
+-- ----------------------------------------
+-- entity
+-- ----------------------------------------
 
 entity schaltung_b is
   port ( A : in  std_logic;
@@ -9,11 +20,17 @@ entity schaltung_b is
          Y : out std_logic);
 end schaltung_b;
 
+
+
+-- ----------------------------------------
+-- architecture
+-- ----------------------------------------
+
 architecture Behavioral of schaltung_b is
 
 begin
-  --Direkte zuweisung der Funktion auf
-  --den Ausgang
+
   Y <= ((A and B) or C) and not D;
+
 end Behavioral;
 

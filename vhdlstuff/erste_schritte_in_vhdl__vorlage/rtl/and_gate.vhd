@@ -1,17 +1,36 @@
+
+-- ----------------------------------------
+-- libraries
+-- ----------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+
+
+-- ----------------------------------------
+-- entity
+-- ----------------------------------------
+
 entity and_gate is
-    Port ( 
-           --hier Signale definieren in:A,B; out C
-           );
+    Port (
+
+        -- Define input and output signals here.
+
+    );
 end and_gate;
+
+
+
+-- ----------------------------------------
+-- architecture
+-- ----------------------------------------
 
 architecture Behavioral of and_gate is
 
 begin
---Zuweisung C<=?
 
+    -- Assign signals here.
 
 end Behavioral;
 

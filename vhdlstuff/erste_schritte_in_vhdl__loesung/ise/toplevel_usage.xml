@@ -4,8 +4,8 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="4">
-<DesignStatistics TimeStamp="Tue Jun  1 15:19:39 2021"><group name="NetStatistics">
+<DeviceUsageSummary rev="5">
+<DesignStatistics TimeStamp="Wed Jul 28 10:58:32 2021"><group name="NetStatistics">
 <item name="NumNets_Active" rev="4">
 <attrib name="value" value="32"/></item>
 <item name="NumNodesOfType_Active_DOUBLE" rev="4">
@@ -36,35 +36,20 @@
 <attrib name="value" value="1"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="3">
+<item name="AGG_BONDED_IO" rev="5">
 <attrib name="value" value="16"/></item>
-<item name="AGG_IO" rev="3">
+<item name="AGG_IO" rev="5">
 <attrib name="value" value="16"/></item>
-<item name="AGG_SLICE" rev="3">
+<item name="AGG_SLICE" rev="5">
 <attrib name="value" value="1"/></item>
-<item name="NUM_4_INPUT_LUT" rev="3">
+<item name="NUM_4_INPUT_LUT" rev="5">
 <attrib name="value" value="1"/></item>
-<item name="NUM_BONDED_IOB" rev="3">
+<item name="NUM_BONDED_IOB" rev="5">
 <attrib name="value" value="16"/></item>
-<item name="NUM_SLICEL" rev="3">
+<item name="NUM_SLICEL" rev="5">
 <attrib name="value" value="1"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Tue Jun  1 15:19:39 2021"><group name="SiteSummary">
-<item name="IOB" rev="4">
-<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
-<item name="IOB_INBUF" rev="4">
-<attrib name="total" value="1000000"/><attrib name="used" value="15"/></item>
-<item name="IOB_OUTBUF" rev="4">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IOB_PAD" rev="4">
-<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
-<item name="SLICEL" rev="4">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="SLICEL_G" rev="4">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-</group>
-</DeviceUsage>
 <ReportConfigData TimeStamp="Tue Jun  1 15:19:39 2021"><group name="IOB_OUTBUF">
 <item name="IN" rev="4">
 <attrib name="IN_INV" value="0"/><attrib name="IN" value="1"/></item>

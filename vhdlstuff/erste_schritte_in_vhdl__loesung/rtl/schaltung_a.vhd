@@ -1,5 +1,16 @@
+
+-- ----------------------------------------
+-- libraries
+-- ----------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+
+
+
+-- ----------------------------------------
+-- entity
+-- ----------------------------------------
 
 entity schaltung_a is
   port ( A : in  std_logic;
@@ -9,15 +20,17 @@ entity schaltung_a is
          Y : out std_logic);
 end schaltung_a;
 
+
+
+-- ----------------------------------------
+-- architecture
+-- ----------------------------------------
+
 architecture Behavioral of schaltung_a is
-  --signale fuer verbindungen implementieren
   signal ab, abc, nd, abcd : std_logic;
 
 begin
 
-  --Die zuvor definierten Gatter werden einzeln
-  --instanziert und mit den oben definierten
-  --Signalen verbunden
   and1 : entity work.and_gate
     port map (
       A => A,

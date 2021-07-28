@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Tue Jun  1 15:19:14 2021">
+  <application stringID="par" timeStamp="Wed Jul 28 10:58:35 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -53,7 +53,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i5-9500 CPU @ 3.00GHz"/>
-          <item stringID="speed" value="3000.680 MHz"/>
+          <item stringID="speed" value="3000.058 MHz"/>
         </row>
       </table>
     </section>
@@ -75,11 +75,11 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="2 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="1 secs "/>
         <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="1 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="2 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="1 secs "/>
         <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="1 secs "/>
       </section>
     </task>

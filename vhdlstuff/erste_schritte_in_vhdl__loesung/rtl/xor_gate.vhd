@@ -1,5 +1,16 @@
+
+-- ----------------------------------------
+-- libraries
+-- ----------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+
+
+
+-- ----------------------------------------
+-- entity
+-- ----------------------------------------
 
 entity xor_gate is
   port ( A : in  std_logic;
@@ -7,10 +18,16 @@ entity xor_gate is
          C : out std_logic);
 end xor_gate;
 
+
+
+-- ----------------------------------------
+-- architecture
+-- ----------------------------------------
+
 architecture Behavioral of xor_gate is
 
 begin
-  
+
   C <= A xor B;
 
 end Behavioral;
