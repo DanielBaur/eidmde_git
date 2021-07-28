@@ -3,7 +3,7 @@
 # excluding whole directories to avoid uploading unnecessary files to the online repository
 arduinostuff/*
 uebungsblaetter/*
-vhdlstuff/*
+vhdlstuff/**
 presentation/*
 resources/*
 
