@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/ise/toplevel.ncd
+OUTFILE=/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/ise/toplevel.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/ise
+LICENSE=ISE
+USER_INFO=174152576_177781787_210736879_562

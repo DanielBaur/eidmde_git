@@ -3,7 +3,7 @@
 # excluding whole directories to avoid uploading unnecessary files to the online repository
 arduinostuff/*
 uebungsblaetter/*
-vhdlstuff/*
+#vhdlstuff/*
 presentation/*
 resources/*
 
@@ -31,7 +31,7 @@ resources/*
 # exceptions: 'erste_schritte_in_vhdl__vorlage'
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/erste_schritte_in_vhdl.xise
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/erste_schritte_in_vhdl.gise
-!erste_schritte_in_vhdl__vorlage/ise/toplevel_summary.html
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/toplevel_summary.html
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/_xmsgs
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/iseconfig
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/and_gate.vhd

@@ -1,0 +1,2 @@
+vhdl work "../rtl/schaltung_b.vhd"
+vhdl work "../rtl/toplevel.vhd"
