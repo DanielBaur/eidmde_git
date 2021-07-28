@@ -1,0 +1,19 @@
+#switches
+NET "SWITCHES<0>"  LOC = "F12"  ;
+NET "SWITCHES<1>"  LOC = "G12"  ;
+NET "SWITCHES<2>"  LOC = "H14"  ;
+NET "SWITCHES<3>"  LOC = "H13"  ;
+NET "SWITCHES<4>"  LOC = "J14"  ;
+NET "SWITCHES<5>"  LOC = "J13"  ;
+NET "SWITCHES<6>"  LOC = "K14"  ;
+NET "SWITCHES<7>"  LOC = "K13"  ;
+
+#leds
+NET "LEDS<0>"  LOC = "K12";
+NET "LEDS<1>"  LOC = "P14";
+NET "LEDS<2>"  LOC = "L12";
+NET "LEDS<3>"  LOC = "N14";
+NET "LEDS<4>"  LOC = "P13";
+NET "LEDS<5>"  LOC = "N12";
+NET "LEDS<6>"  LOC = "P12";
+NET "LEDS<7>"  LOC = "P11";
