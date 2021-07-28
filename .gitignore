@@ -1,19 +1,60 @@
 
 
-# exclude the contents copied into the Docker image
+# excluding whole directories to avoid uploading unnecessary files to the online repository
 #arduinostuff/*
-#vhdlstuff/*
+vhdlstuff/*
 presentation/*
 resources/*
 
-
-# exceptions to the rule
-#!vhdlstuff/erste_schritte_in_vhdl__loesung/
-#!vhdlstuff/erste_schritte_in_vhdl__vorlage/
-#!vhdlstuff/die_stoppuhr__loesung/
-#!vhdlstuff/die_stoppuhr__vorlage/
+# exceptions: resources
 !resources/kuea16__k_urbanski_et_al__digitaltechnik.pdf
+
+# exceptions: presentation
 !presentation/beamerthemedaniels.sty
 !presentation/eidmde_slides.pdf
 !presentation/eidmde_slides.tex
 !presentation/images
+
+# exceptions: 'erste_schritte_in_vhdl__vorlage'
+!erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_a.vhd
+!erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_b.vhd
+!erste_schritte_in_vhdl__vorlage/rtl/kv_schaltung_c.vhd
+!erste_schritte_in_vhdl__vorlage/rtl/signal_mapping.ucf
+!erste_schritte_in_vhdl__vorlage/rtl/toplevel.vhd
+!erste_schritte_in_vhdl__vorlage/tb/testbench_kv.vhd
+
+# exceptions: 'erste_schritte_in_vhdl_loesung'
+!erste_schritte_in_vhdl__loesung/rtl/kv_schaltung_a.vhd
+!erste_schritte_in_vhdl__loesung/rtl/kv_schaltung_b.vhd
+!erste_schritte_in_vhdl__loesung/rtl/kv_schaltung_c.vhd
+!erste_schritte_in_vhdl__loesung/rtl/signal_mapping.ucf
+!erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd
+!erste_schritte_in_vhdl__vorlage/tb/testbench_kv.vhd
+
+# exceptions: 'die_stoppuhr__vorlage'
+!die_stoppuhr__vorlage/rtl/bcd_counter.vhd
+!die_stoppuhr__vorlage/rtl/clock_scaler.vhd
+!die_stoppuhr__vorlage/rtl/constraints.ucf
+!die_stoppuhr__vorlage/rtl/debouncing.vhd
+!die_stoppuhr__vorlage/rtl/display_controller.vhd
+!die_stoppuhr__vorlage/rtl/seven_seg_encoder.vhd
+!die_stoppuhr__vorlage/rtl/toplevel.vhd
+!die_stoppuhr__vorlage/tb/tb_bcd_counter.vhd
+!die_stoppuhr__vorlage/tb/tb_clock_scaler.vhd
+!die_stoppuhr__vorlage/tb/tb_debouncing.vhd
+!die_stoppuhr__vorlage/tb/tb_display_controller.vhd
+!die_stoppuhr__vorlage/tb/tb_seven_seg_encoder.vhd
+
+# exceptions: 'die_stoppuhr__loesung'
+!die_stoppuhr__loesung/rtl/bcd_counter.vhd
+!die_stoppuhr__loesung/rtl/clock_scaler.vhd
+!die_stoppuhr__loesung/rtl/constraints.ucf
+!die_stoppuhr__loesung/rtl/debouncing.vhd
+!die_stoppuhr__loesung/rtl/display_controller.vhd
+!die_stoppuhr__loesung/rtl/seven_seg_encoder.vhd
+!die_stoppuhr__loesung/rtl/toplevel.vhd
+!die_stoppuhr__loesung/tb/tb_bcd_counter.vhd
+!die_stoppuhr__loesung/tb/tb_clock_scaler.vhd
+!die_stoppuhr__loesung/tb/tb_debouncing.vhd
+!die_stoppuhr__loesung/tb/tb_display_controller.vhd
+!die_stoppuhr__loesung/tb/tb_seven_seg_encoder.vhd

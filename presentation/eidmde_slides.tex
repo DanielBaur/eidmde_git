@@ -128,7 +128,7 @@
                 \item 7 ECTS (Prüfungsleistung): Teilnahme +Kurzvortrag +Prüfung
             \end{itemize}
             \item Covid-19 $\quad\Rightarrow\quad$ Sitzplätze beibehalten +MNS
-            \item Unterlagen: \textcolor{uniblau}{\href{https://ilias.uni-freiburg.de/ilias.php?ref_id=1481157&cmdClass=ilrepositorygui&cmdNode=yh&baseClass=ilrepositorygui}{ILIAS-Kursseite}}
+            \item Unterlagen: \textcolor{uniblau}{\href{https://ilias.uni-freiburg.de/ilias.php?ref_id=2285967&cmdClass=ilrepositorygui&cmdNode=yj&baseClass=ilrepositorygui}{ILIAS-Kursseite}}
         \end{itemize}
     \end{textblock*}
     \framenumber
@@ -143,7 +143,12 @@
         \begin{itemize}
             \setlength\itemsep{16pt}
             \item Grundlagen: \textcolor{uniblau}{\href{https://link.springer.com/book/10.1007/978-3-662-49731-9}{K{\fontsize{10}{10}\selectfont LAUS} U{\fontsize{10}{10}\selectfont RBANSKI} et al.: Digitaltechnik (7. Auflage)}}
-            \item Ergänzung: \textcolor{uniblau}{\href{https://www.youtube.com/playlist?list=PLH2l6uzC4UEW0s7-KewFLBC1D0l6XRfye}{Crash Course: Computer Science}}
+            \item Ergänzung:
+                \vspace*{-\parskip}
+                \begin{itemize}
+                \item \textcolor{uniblau}{\href{https://www.youtube.com/playlist?list=PLH2l6uzC4UEW0s7-KewFLBC1D0l6XRfye}{Crash Course: Computer Science}}
+                \item \textcolor{uniblau}{\href{https://www.youtube.com/channel/UCJQJ4GjTiq5lmn8czf8oo0Q}{PowerCert Animated Videos}}
+                \end{itemize}
             %\item Inspiration: \textcolor{uniblau}{\href{https://www.arduino.cc/}{Arduino Webpage}}
         \end{itemize}
     \end{textblock*}
@@ -251,78 +256,78 @@
 
 
 % chapter: Einführung in die FPGA-Programmierung
-%\begin{frame}[label=fpga]
-%    \chapterslide{\hyperlink{inhalt}{Einführung in die FPGA-Programmierung}}
-%    \addtocounter{framenumber}{-1}
-%\end{frame}
+\begin{frame}[label=fpga]
+    \chapterslide{\hyperlink{inhalt}{Einführung in die FPGA-Programmierung}}
+    \addtocounter{framenumber}{-1}
+\end{frame}
 
 
 % VHDL-basierter Entwicklungsprozess
-%\begin{frame}
-%    \frametitle{VHDL Entwicklungsprozess}
-%    % text bullets
-%    \begin{textblock*}{2\paperwidth}(0.0\paperwidth,0.0\paperheight)
-%        \vspace*{2.0cm}
-%        \begin{itemize}
-%            \setlength\itemsep{16pt}
-%            \item digitale Hardware $\rightarrow$ \textit{Modul}
-%            \begin{itemize}
-%                \item \textcolor{green}{Bibliotheken}
-%                \item \textcolor{blue}{\textit{entity}}
-%                \item \textcolor{red}{\textit{architecture}}
-%            \end{itemize}
-%            \item Softwaretest $\rightarrow$ \textit{Testbench}
-%            %\item \textit{nebenläufig} statt sequenziell
-%            \item Prozess: \textit{Simulation} $\leftrightarrow$ \textit{Synthese}
-%        \end{itemize}
-%    \end{textblock*}
-%    % image
-%    \begin{textblock*}{1.0\paperwidth}(0.975\paperwidth,0.30\paperheight)
-%        \rotatebox[origin=c]{90}{{\fontsize{5}{10}\selectfont[{\fontsize{6}{10}\selectfont K}. {\fontsize{6}{10}\selectfont U}{\fontsize{4}{10}\selectfont RBANSKI} et al. \textit{Digitaltechnik}. Berlin. 2015.]}}
-%    \end{textblock*}
-%    \AddToShipoutPictureBG*{\put(0.58\paperwidth,0.00\paperheight){\includegraphics[height=1.0\paperheight]{./images/urbanski__vhdl_basierter_entwurfsprozess.png}}}
-%    \framenumber
-%\end{frame}
+\begin{frame}
+    \frametitle{VHDL Entwicklungsprozess}
+    % text bullets
+    \begin{textblock*}{2\paperwidth}(0.0\paperwidth,0.0\paperheight)
+        \vspace*{2.0cm}
+        \begin{itemize}
+            \setlength\itemsep{16pt}
+            \item digitale Hardware $\rightarrow$ \textit{Modul}
+            \begin{itemize}
+                \item \textcolor{green}{Bibliotheken}
+                \item \textcolor{blue}{\textit{entity}}
+                \item \textcolor{red}{\textit{architecture}}
+            \end{itemize}
+            \item Softwaretest $\rightarrow$ \textit{Testbench}
+            %\item \textit{nebenläufig} statt sequenziell
+            \item Prozess: \textit{Simulation} $\leftrightarrow$ \textit{Synthese}
+        \end{itemize}
+    \end{textblock*}
+    % image
+    \begin{textblock*}{1.0\paperwidth}(0.975\paperwidth,0.30\paperheight)
+        \rotatebox[origin=c]{90}{{\fontsize{5}{10}\selectfont[{\fontsize{6}{10}\selectfont K}. {\fontsize{6}{10}\selectfont U}{\fontsize{4}{10}\selectfont RBANSKI} et al. \textit{Digitaltechnik}. Berlin. 2015.]}}
+    \end{textblock*}
+    \AddToShipoutPictureBG*{\put(0.58\paperwidth,0.00\paperheight){\includegraphics[height=1.0\paperheight]{./images/urbanski__vhdl_basierter_entwurfsprozess.png}}}
+    \framenumber
+\end{frame}
 
 
 % VHDL-Modul: and-Gate
-%\begin{frame}
-%    \frametitle{VHDL-Modul: and-Gate}
-%    % image source
-%    \begin{textblock*}{1.0\paperwidth}(0.975\paperwidth,0.30\paperheight)
-%        \rotatebox[origin=c]{90}{{\fontsize{5}{10}\selectfont[{\fontsize{6}{10}\selectfont K}. {\fontsize{6}{10}\selectfont U}{\fontsize{4}{10}\selectfont RBANSKI} et al. \textit{Digitaltechnik}. Berlin. 2015.]}}
-%    \end{textblock*}
-%    % library
-%    \begin{textblock*}{1.0\paperwidth}(0.69\paperwidth,0.20\paperheight)
-%        \textcolor{green}{Bibliotheken}
-%    \end{textblock*}
-%    \AddToShipoutPictureBG*{\put(0.14\paperwidth,0.71\paperheight){\includegraphics[width=0.53\paperwidth, cfbox=green 1.8pt 0pt]{./images/urbanski__screenshot_and_2_library.png}}}
-%    % entity
-%    \begin{textblock*}{1.0\paperwidth}(0.69\paperwidth,0.47\paperheight)
-%        \textcolor{blue}{\textit{entity}}
-%    \end{textblock*}
-%    \AddToShipoutPictureBG*{\put(0.14\paperwidth,0.34\paperheight){\includegraphics[width=0.53\paperwidth, cfbox=blue 1.8pt 0pt]{./images/urbanski__screenshot_and_2_entity.png}}}
-%    % architecture
-%    \begin{textblock*}{1.0\paperwidth}(0.69\paperwidth,0.81\paperheight)
-%        \textcolor{red}{\textit{architecture}}
-%    \end{textblock*}
-%    \AddToShipoutPictureBG*{\put(0.14\paperwidth,0.02\paperheight){\includegraphics[width=0.53\paperwidth, cfbox=red 1.8pt 0pt]{./images/urbanski__screenshot_and_2_architecture.png}}}
-%    \framenumber
-%\end{frame}
+\begin{frame}
+    \frametitle{VHDL-Modul: and-Gate}
+    % image source
+    \begin{textblock*}{1.0\paperwidth}(0.975\paperwidth,0.30\paperheight)
+        \rotatebox[origin=c]{90}{{\fontsize{5}{10}\selectfont[{\fontsize{6}{10}\selectfont K}. {\fontsize{6}{10}\selectfont U}{\fontsize{4}{10}\selectfont RBANSKI} et al. \textit{Digitaltechnik}. Berlin. 2015.]}}
+    \end{textblock*}
+    % library
+    \begin{textblock*}{1.0\paperwidth}(0.69\paperwidth,0.20\paperheight)
+        \textcolor{green}{Bibliotheken}
+    \end{textblock*}
+    \AddToShipoutPictureBG*{\put(0.14\paperwidth,0.71\paperheight){\includegraphics[width=0.53\paperwidth, cfbox=green 1.8pt 0pt]{./images/urbanski__screenshot_and_2_library.png}}}
+    % entity
+    \begin{textblock*}{1.0\paperwidth}(0.69\paperwidth,0.47\paperheight)
+        \textcolor{blue}{\textit{entity}}
+    \end{textblock*}
+    \AddToShipoutPictureBG*{\put(0.14\paperwidth,0.34\paperheight){\includegraphics[width=0.53\paperwidth, cfbox=blue 1.8pt 0pt]{./images/urbanski__screenshot_and_2_entity.png}}}
+    % architecture
+    \begin{textblock*}{1.0\paperwidth}(0.69\paperwidth,0.81\paperheight)
+        \textcolor{red}{\textit{architecture}}
+    \end{textblock*}
+    \AddToShipoutPictureBG*{\put(0.14\paperwidth,0.02\paperheight){\includegraphics[width=0.53\paperwidth, cfbox=red 1.8pt 0pt]{./images/urbanski__screenshot_and_2_architecture.png}}}
+    \framenumber
+\end{frame}
 
 
 % Nebenläufigkeit
-%\begin{frame}
-%    \frametitle{Nebenläufigkeit (\textit{Concurrency})}
-%    \begin{textblock*}{2\paperwidth}(0.0\paperwidth,0.0\paperheight)
-%        \vspace*{2.0cm}
-%        \begin{itemize}
-%            \setlength\itemsep{16pt}
-%            \item \textcolor{uniblau}{\href{https://stackoverflow.com/questions/13954193/is-process-in-vhdl-reentrant/}{\texttt{stackoverflow}}}
-%        \end{itemize}
-%    \end{textblock*}
-%    \framenumber
-%\end{frame}
+\begin{frame}
+    \frametitle{Nebenläufigkeit (\textit{Concurrency})}
+    \begin{textblock*}{2\paperwidth}(0.0\paperwidth,0.0\paperheight)
+        \vspace*{2.0cm}
+        \begin{itemize}
+            \setlength\itemsep{16pt}
+            \item \textcolor{uniblau}{\href{https://stackoverflow.com/questions/13954193/is-process-in-vhdl-reentrant/}{\texttt{stackoverflow}}}
+        \end{itemize}
+    \end{textblock*}
+    \framenumber
+\end{frame}
 
 
 % Stoppuhr: Arbeitsteilung
