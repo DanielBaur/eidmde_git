@@ -35,12 +35,11 @@ resources/*
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/_xmsgs
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/iseconfig
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/and_gate.vhd
-!vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/not_gate.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/schaltung_a.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/schaltung_b.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/signal_mapping.ucf
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/toplevel.vhd
-!vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_and.vhd
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_gates.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_schaltung.vhd
 
 # exceptions: 'erste_schritte_in_vhdl__loesung'
@@ -58,12 +57,8 @@ resources/*
 !vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/signal_mapping.ucf
 !vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd
 !vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/xor_gate.vhd
-!vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_and.vhd
-!vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_nand.vhd
-!vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_not.vhd
-!vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_or.vhd
+!vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_gates.vhd
 !vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_schaltung.vhd
-!vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_xor.vhd
 
 # exceptions: 'die_stoppuhr__vorlage'
 !vhdlstuff/die_stoppuhr__vorlage/rtl/bcd_counter.vhd
