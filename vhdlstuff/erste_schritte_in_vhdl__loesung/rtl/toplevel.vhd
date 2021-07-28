@@ -14,26 +14,29 @@ end entity toplevel;
 
 architecture behav of toplevel is
 
+signal out_val : std_logic;
 
-begin  
-  
-  my_kv_a : entity work.KV_a
-    port map (
-      A =>SWITCHES(0),
-      B =>SWITCHES(1),
-      C =>SWITCHES(2), 
-  	   D =>SWITCHES(3), 
-      Y =>LEDS(0)
-  		);
 
-  my_kv_b : entity work.KV_b
+begin  -- architecture behav
+--  my_schaltung_a : entity work.schaltung_a
+--    port map (
+--      A =>SWITCHES(0),
+--      B =>SWITCHES(1),
+--      C =>SWITCHES(2), 
+--  	   D =>SWITCHES(3), 
+--      Y =>out_val
+--  		);
+
+--LEDS<=(others=>out_val);
+
+  my_schaltung_b : entity work.schaltung_b
     port map (
-    A =>SWITCHES(4),
-    B =>SWITCHES(5),
-    C =>SWITCHES(6), 
-	 D =>SWITCHES(7), 
-	 Y =>LEDS(4)
-	 );
+    A =>SWITCHES(0),
+    B =>SWITCHES(1),
+    C =>SWITCHES(2), 
+		D =>SWITCHES(3), 
+		Y =>LEDS(4)
+		);
 
 
 end architecture behav;

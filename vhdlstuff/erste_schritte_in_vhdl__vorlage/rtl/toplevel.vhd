@@ -14,9 +14,14 @@ end entity toplevel;
 
 architecture behav of toplevel is
 
-begin  
-  
-  --Module KV_a und KV_b instanzieren und mit switches/LEDS verbinden
-  
+--hier eventuell notwendige signale definieren
+
+
+begin 
+
+
+--hier bitte Schaltung a oder b instanzieren
+--und mit SWITCHES und LEDS sinnvoll verbinden   
+
 
 end architecture behav;
