@@ -2,6 +2,7 @@
 
 \documentclass[12pt]{article}
 \usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom =30mm]{geometry}
+\usepackage{upquote}
 \input{preamble}
 \fancyhead[R]{{\large \textbf{Blatt 3}}}
 
@@ -30,8 +31,7 @@ Im Rahmen dieses Übungsblockes
 \end{itemize}
 
 
-Laden Sie sich dazu das Projekt \texttt{erste\_schritte\_in\_vhdl\_\_vorlage.tar.gz}
-von der Adresse \url{https://ilias.uni-freiburg.de/goto.php?target=file_2288412_download&client_id=unifreiburg} (Ilias Seite)  herunter und entpacken Sie es.
+Laden Sie sich dazu das Projekt \textcolor{blue}{\href{https://ilias.uni-freiburg.de/goto.php?target=file_2288412_download&client_id=unifreiburg}{\texttt{erste\_schritte\_in\_vhdl\_\_vorlage.tar.gz}}} herunter (ILIAS) und entpacken Sie es.
 Nach der Übung werden auch Lösungsvorschläge auf ILIAS veröffentlicht.
 
 
@@ -50,7 +50,7 @@ und starten sie die \textit{ISE Design Suite}:
 \begin{itemize}
 \setlength\itemsep{-\parskip}
     \item Öffnen Sie ein Terminal und erstellen Sie das \texttt{bash}-Skript $\sim$\texttt{/startise.sh}:
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}[language=bash, columns=fullflexible]
 #!/bin/bash
 
 cd /mnt/ISE/14.7/ISE_DS
@@ -59,8 +59,8 @@ source settings64.sh
 ise\end{lstlisting}
     \vspace*{-6.0mm}
     \item Machen Sie das Skript ausführbar und erzeugen Sie ein \texttt{alias}:\\
-    \$ \texttt{chmod +x }$\sim$\texttt{/startise.sh}\\
-    \$ \texttt{echo "alias sise='}$\sim$\texttt{/startise.sh'" >> ~/.bash\_aliases}\\[-3.0mm]
+    \$ \texttt{chmod +x } \textasciitilde \texttt{/startise.sh}\\
+    \$ \texttt{echo \textquotedbl alias sise=\textquotesingle\textasciitilde /startise.sh\textquotesingle\textquotedbl \: \textgreater{\textgreater} \textasciitilde/.bash\_aliases}\\[-3.0mm]
     \item Sie können nun die \texttt{ISE Design Suite} starten:\\
     \$ \texttt{sise}
 \end{itemize}
