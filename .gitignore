@@ -1,16 +1,18 @@
 
+# .gitignore can be super annoying to work with.
+# Especially if you'd like to exclude - like in this case - whole directories except specific files nested therein.
+# The following thread was super helpful therefore: "stackoverflow.com/questions/987142/make-gitignore-ignore-everything-except-a-few-files".
+
+
+
 
 # excluding whole directories to avoid uploading unnecessary files to the online repository
 arduinostuff/*
 uebungsblaetter/*
 vhdlstuff/*
 presentation/*
-resources/*
 
-# exceptions: resources
-!resources/kuea16__k_urbanski_et_al__digitaltechnik.pdf
-
-# exceptions: presentation
+# exceptions: uebungsblaetter
 !uebungsblaetter/blatt1__loetpraxis.tex
 !uebungsblaetter/blatt2__bool.tex
 !uebungsblaetter/blatt3__vhdl.tex
@@ -29,6 +31,14 @@ resources/*
 !presentation/images
 
 # exceptions: 'erste_schritte_in_vhdl__vorlage'
+!vhdlstuff/erste_schritte_in_vhdl__vorlage
+vhdlstuff/erste_schritte_in_vhdl__vorlage/*
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/ise
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/tb
+vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/*
+vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/*
+vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/*
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/erste_schritte_in_vhdl.xise
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/erste_schritte_in_vhdl.gise
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/toplevel_summary.html
@@ -39,7 +49,7 @@ resources/*
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/schaltung_b.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/signal_mapping.ucf
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/toplevel.vhd
-!*vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_gates.vhd
+!vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_gates.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_schaltung.vhd
 
 # exceptions: 'erste_schritte_in_vhdl__loesung'
