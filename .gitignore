@@ -39,6 +39,9 @@ vhdlstuff/erste_schritte_in_vhdl__vorlage/*
 vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/*
 vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/*
 vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/*
+# The above lines stem from the thread referenced on the top.
+# They are necessary in order to include the directories that otherwise would've been excluded by 'vhdlstuff/*'.
+# Only if the parent directory of a file is whitelisted the respective file itself can be whitelisted.
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/erste_schritte_in_vhdl.xise
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/erste_schritte_in_vhdl.gise
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/ise/toplevel_summary.html
@@ -53,6 +56,14 @@ vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/*
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_schaltung.vhd
 
 # exceptions: 'erste_schritte_in_vhdl__loesung'
+!vhdlstuff/erste_schritte_in_vhdl__loesung
+vhdlstuff/erste_schritte_in_vhdl__loesung/*
+!vhdlstuff/erste_schritte_in_vhdl__loesung/ise
+!vhdlstuff/erste_schritte_in_vhdl__loesung/rtl
+!vhdlstuff/erste_schritte_in_vhdl__loesung/tb
+vhdlstuff/erste_schritte_in_vhdl__loesung/ise/*
+vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/*
+vhdlstuff/erste_schritte_in_vhdl__loesung/tb/*
 !vhdlstuff/erste_schritte_in_vhdl__loesung/ise/erste_schritte_in_vhdl.xise
 !vhdlstuff/erste_schritte_in_vhdl__loesung/ise/erste_schritte_in_vhdl.gise
 !vhdlstuff/erste_schritte_in_vhdl__loesung/ise/toplevel_summary.html
