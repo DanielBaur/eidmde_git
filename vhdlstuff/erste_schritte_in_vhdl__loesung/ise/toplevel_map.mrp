@@ -9,23 +9,23 @@ Target Device  : xc3s200
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Wed Jul 28 10:58:31 2021
+Mapped Date    : Thu Jul 29 16:48:17 2021
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of 4 input LUTs:                 1 out of   3,840    1%
+  Number of 4 input LUTs:                 2 out of   3,840    1%
 Logic Distribution:
-  Number of occupied Slices:              1 out of   1,920    1%
-    Number of Slices containing only related logic:       1 out of       1 100%
-    Number of Slices containing unrelated logic:          0 out of       1   0%
+  Number of occupied Slices:              2 out of   1,920    1%
+    Number of Slices containing only related logic:       2 out of       2 100%
+    Number of Slices containing unrelated logic:          0 out of       2   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:           1 out of   3,840    1%
+  Total Number of 4 input LUTs:           2 out of   3,840    1%
   Number of bonded IOBs:                 16 out of     173    9%
 
-Average Fanout of Non-Clock Nets:                0.31
+Average Fanout of Non-Clock Nets:                1.00
 
 Peak Memory Usage:  577 MB
 Total REAL time to MAP completion:  1 secs 
@@ -73,12 +73,9 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network LEDS<0>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 10 more times for the
-   following (max. 5 shown):
-   LEDS<1>_IBUF,
-   LEDS<2>_IBUF,
-   LEDS<3>_IBUF,
+INFO:LIT:243 - Logical network LEDS<4>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 2 more times for the following
+   (max. 5 shown):
    LEDS<5>_IBUF,
    LEDS<6>_IBUF
    To see the details of these info messages, please use the -detail switch.
@@ -100,14 +97,14 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LEDS<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| LEDS<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| LEDS<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| LEDS<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| LEDS<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LEDS<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LEDS<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LEDS<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LEDS<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LEDS<4>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | LEDS<5>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | LEDS<6>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| LEDS<7>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LEDS<7>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | SWITCHES<0>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | SWITCHES<1>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | SWITCHES<2>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |

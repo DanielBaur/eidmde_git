@@ -21,7 +21,6 @@
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
@@ -30,13 +29,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Manage Configuration Project (iMPACT)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001aa000000010000000100000000000000000000000064ffffffff000000810000000000000001000001aa0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Manage Configuration Project (iMPACT)</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -69,19 +68,19 @@
          <ClosedNode>/testbench_nand - behavior |home|db1086|Desktop|erste_schritte_in_vhdl__loesung|tb|testbench_nand.vhd</ClosedNode>
          <ClosedNode>/testbench_not - behavior |home|db1086|Desktop|erste_schritte_in_vhdl__loesung|tb|testbench_not.vhd</ClosedNode>
          <ClosedNode>/testbench_or - behavior |home|db1086|Desktop|erste_schritte_in_vhdl__loesung|tb|testbench_or.vhd</ClosedNode>
-         <ClosedNode>/testbench_schaltung - behavior |home|db1086|Desktop|eidmde_git|vhdlstuff|erste_schritte_in_vhdl__loesung|tb|testbench_schaltung.vhd</ClosedNode>
+         <ClosedNode>/testbench_schaltung - behavior |home|db1086|Desktop|eidmde_git|vhdlstuff|erste_schritte_in_vhdl__loesung|tb|testbench_schaltung.vhd/my_schaltung_a - schaltung_a - Behavioral</ClosedNode>
          <ClosedNode>/testbench_schaltung - behavior |home|db1086|Desktop|erste_schritte_in_vhdl__loesung|tb|testbench_schaltung.vhd</ClosedNode>
          <ClosedNode>/testbench_xor - behavior |home|db1086|Desktop|erste_schritte_in_vhdl__loesung|tb|testbench_xor.vhd</ClosedNode>
          <ClosedNode>/toplevel - behav |home|db1086|Desktop|erste_schritte_in_vhdl__loesung|rtl|toplevel.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>my_schaltung_b - schaltung_b - Behavioral (/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd)</SelectedItem>
+         <SelectedItem>testbench_schaltung - behavior (/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_schaltung.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e80000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>my_schaltung_b - schaltung_b - Behavioral (/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd)</CurrentItem>
+      <CurrentItem>testbench_schaltung - behavior (/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/tb/testbench_schaltung.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -118,12 +117,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001aa000000010000000100000000000000000000000064ffffffff000000810000000000000001000001aa0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>

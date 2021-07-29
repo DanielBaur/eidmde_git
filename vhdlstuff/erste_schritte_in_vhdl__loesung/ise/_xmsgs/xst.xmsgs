@@ -5,43 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd</arg>&quot;.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">abcd</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel/behav</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/schaltung_b</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/schaltung_b/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SWITCHES&lt;7:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="2565" delta="old" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;0&gt;</arg>&gt; is never assigned.
-</msg>
-
-<msg type="warning" file="Xst" num="2565" delta="old" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;1&gt;</arg>&gt; is never assigned.
-</msg>
-
-<msg type="warning" file="Xst" num="2565" delta="old" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;2&gt;</arg>&gt; is never assigned.
-</msg>
-
-<msg type="warning" file="Xst" num="2565" delta="old" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;3&gt;</arg>&gt; is never assigned.
+<msg type="warning" file="Xst" num="2565" delta="new" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;4&gt;</arg>&gt; is never assigned.
 </msg>
 
 <msg type="warning" file="Xst" num="2565" delta="old" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;5&gt;</arg>&gt; is never assigned.
 </msg>
 
 <msg type="warning" file="Xst" num="2565" delta="old" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;6&gt;</arg>&gt; is never assigned.
-</msg>
-
-<msg type="warning" file="Xst" num="2565" delta="old" >Inout &lt;<arg fmt="%s" index="1">LEDS&lt;7&gt;</arg>&gt; is never assigned.
-</msg>
-
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">out_val</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 </messages>

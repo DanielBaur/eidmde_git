@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Reading design: toplevel.prj
@@ -107,13 +107,16 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/toplevel is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd".
-WARNING:HDLParsers:3607 - Unit work/toplevel/behav is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd".
-WARNING:HDLParsers:3607 - Unit work/schaltung_b is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd".
-WARNING:HDLParsers:3607 - Unit work/schaltung_b/Behavioral is now defined in a different file.  It was defined in "/home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd", and is now defined in "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd".
+Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd" in Library work.
+Architecture behavioral of Entity and_gate is up to date.
+Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd" in Library work.
+Architecture behavioral of Entity or_gate is up to date.
+Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd" in Library work.
+Architecture behavioral of Entity not_gate is up to date.
+Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd" in Library work.
+Architecture behavioral of Entity schaltung_a is up to date.
 Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd" in Library work.
-Entity <schaltung_b> compiled.
-Entity <schaltung_b> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity schaltung_b is up to date.
 Compiling vhdl file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd" in Library work.
 Entity <toplevel> compiled.
 Entity <toplevel> (Architecture <behav>) compiled.
@@ -123,7 +126,15 @@ Entity <toplevel> (Architecture <behav>) compiled.
 =========================================================================
 Analyzing hierarchy for entity <toplevel> in library <work> (architecture <behav>).
 
+Analyzing hierarchy for entity <schaltung_a> in library <work> (architecture <Behavioral>).
+
 Analyzing hierarchy for entity <schaltung_b> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <and_gate> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <or_gate> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <not_gate> in library <work> (architecture <Behavioral>).
 
 
 =========================================================================
@@ -131,6 +142,18 @@ Analyzing hierarchy for entity <schaltung_b> in library <work> (architecture <Be
 =========================================================================
 Analyzing Entity <toplevel> in library <work> (Architecture <behav>).
 Entity <toplevel> analyzed. Unit <toplevel> generated.
+
+Analyzing Entity <schaltung_a> in library <work> (Architecture <Behavioral>).
+Entity <schaltung_a> analyzed. Unit <schaltung_a> generated.
+
+Analyzing Entity <and_gate> in library <work> (Architecture <Behavioral>).
+Entity <and_gate> analyzed. Unit <and_gate> generated.
+
+Analyzing Entity <or_gate> in library <work> (Architecture <Behavioral>).
+Entity <or_gate> analyzed. Unit <or_gate> generated.
+
+Analyzing Entity <not_gate> in library <work> (Architecture <Behavioral>).
+Entity <not_gate> analyzed. Unit <not_gate> generated.
 
 Analyzing Entity <schaltung_b> in library <work> (Architecture <Behavioral>).
 Entity <schaltung_b> analyzed. Unit <schaltung_b> generated.
@@ -147,17 +170,32 @@ Synthesizing Unit <schaltung_b>.
 Unit <schaltung_b> synthesized.
 
 
+Synthesizing Unit <and_gate>.
+    Related source file is "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd".
+Unit <and_gate> synthesized.
+
+
+Synthesizing Unit <or_gate>.
+    Related source file is "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd".
+Unit <or_gate> synthesized.
+
+
+Synthesizing Unit <not_gate>.
+    Related source file is "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd".
+Unit <not_gate> synthesized.
+
+
+Synthesizing Unit <schaltung_a>.
+    Related source file is "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd".
+WARNING:Xst:1780 - Signal <abcd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <schaltung_a> synthesized.
+
+
 Synthesizing Unit <toplevel>.
     Related source file is "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd".
-WARNING:Xst:647 - Input <SWITCHES<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2565 - Inout <LEDS<0>> is never assigned.
-WARNING:Xst:2565 - Inout <LEDS<1>> is never assigned.
-WARNING:Xst:2565 - Inout <LEDS<2>> is never assigned.
-WARNING:Xst:2565 - Inout <LEDS<3>> is never assigned.
+WARNING:Xst:2565 - Inout <LEDS<4>> is never assigned.
 WARNING:Xst:2565 - Inout <LEDS<5>> is never assigned.
 WARNING:Xst:2565 - Inout <LEDS<6>> is never assigned.
-WARNING:Xst:2565 - Inout <LEDS<7>> is never assigned.
-WARNING:Xst:1780 - Signal <out_val> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <toplevel> synthesized.
 
 
@@ -221,11 +259,11 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 1
-#      LUT4                        : 1
-# IO Buffers                       : 5
-#      IBUF                        : 4
-#      OBUF                        : 1
+# BELS                             : 2
+#      LUT4                        : 2
+# IO Buffers                       : 13
+#      IBUF                        : 8
+#      OBUF                        : 5
 =========================================================================
 
 Device utilization summary:
@@ -234,9 +272,9 @@ Device utilization summary:
 Selected Device : 3s200ft256-4 
 
  Number of Slices:                        1  out of   1920     0%  
- Number of 4 input LUTs:                  1  out of   3840     0%  
+ Number of 4 input LUTs:                  2  out of   3840     0%  
  Number of IOs:                          16
- Number of bonded IOBs:                   5  out of    173     2%  
+ Number of bonded IOBs:                  13  out of    173     7%  
 
 ---------------------------
 Partition Resource Summary:
@@ -269,7 +307,7 @@ Speed Grade: -4
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 8.957ns
+   Maximum combinational path delay: 9.073ns
 
 Timing Detail:
 --------------
@@ -277,35 +315,35 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 4 / 1
+  Total number of paths / destination ports: 20 / 5
 -------------------------------------------------------------------------
-Delay:               8.957ns (Levels of Logic = 3)
+Delay:               9.073ns (Levels of Logic = 3)
   Source:            SWITCHES<3> (PAD)
-  Destination:       LEDS<4> (PAD)
+  Destination:       LEDS<0> (PAD)
 
-  Data Path: SWITCHES<3> to LEDS<4>
+  Data Path: SWITCHES<3> to LEDS<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   0.821   1.140  SWITCHES_3_IBUF (SWITCHES_3_IBUF)
-     LUT4:I0->O            1   0.551   0.801  my_schaltung_b/Y1 (LEDS_4_OBUF)
-     OBUF:I->O                 5.644          LEDS_4_OBUF (LEDS<4>)
+     LUT4:I0->O            4   0.551   0.917  my_schaltung_a/and2/C1 (LEDS_3_OBUF)
+     OBUF:I->O                 5.644          LEDS_0_OBUF (LEDS<0>)
     ----------------------------------------
-    Total                      8.957ns (7.016ns logic, 1.941ns route)
-                                       (78.3% logic, 21.7% route)
+    Total                      9.073ns (7.016ns logic, 2.057ns route)
+                                       (77.3% logic, 22.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 2.58 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 2.70 secs
  
 --> 
 
 
-Total memory usage is 512564 kilobytes
+Total memory usage is 513564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

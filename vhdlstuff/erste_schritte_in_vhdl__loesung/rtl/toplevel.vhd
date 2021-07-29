@@ -37,21 +37,25 @@ begin
 
 -- Comment/uncomment the following snippets in order to switch between implementing 'schaltung_a' or 'schaltung_b'.
 
---  my_schaltung_a : entity work.schaltung_a
---    port map (
---      A =>SWITCHES(0),
---      B =>SWITCHES(1),
---      C =>SWITCHES(2), 
---      D =>SWITCHES(3), 
---      Y =>out_val);
---  LEDS<=(others=>out_val);
-
-  my_schaltung_b : entity work.schaltung_b
+  my_schaltung_a : entity work.schaltung_a
     port map (
       A =>SWITCHES(0),
       B =>SWITCHES(1),
       C =>SWITCHES(2), 
       D =>SWITCHES(3), 
-      Y =>LEDS(4));
+      Y =>out_val);
+--  LEDS<=(others=>out_val);
+  LEDS(0) <= out_val;
+  LEDS(1) <= out_val;
+  LEDS(2) <= out_val;
+  LEDS(3) <= out_val;
+
+  my_schaltung_b : entity work.schaltung_b
+    port map (
+      A =>SWITCHES(4),
+      B =>SWITCHES(5),
+      C =>SWITCHES(6), 
+      D =>SWITCHES(7), 
+      Y =>LEDS(7));
 
 end architecture behav;

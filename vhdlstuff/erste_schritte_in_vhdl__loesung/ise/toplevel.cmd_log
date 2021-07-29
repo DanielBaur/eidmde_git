@@ -15,3 +15,16 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/db1086/Desktop/eidmde_gi
 map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
 par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf 
+xst -intstyle ise -ifn "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/toplevel.xst" -ofn "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/signal_mapping.ucf -p xc3s200-ft256-4 toplevel.ngc toplevel.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf 
+bitgen -intstyle ise -f toplevel.ut toplevel.ncd 
+xst -intstyle ise -ifn "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/toplevel.xst" -ofn "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/signal_mapping.ucf -p xc3s200-ft256-4 toplevel.ngc toplevel.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf 
+bitgen -intstyle ise -f toplevel.ut toplevel.ncd 
+vhdtdtfi -prj erste_schritte_in_vhdl -o /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/toplevel.vhi -module toplevel -template /mnt/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../rtl/or_gate.vhd -lib work ../rtl/not_gate.vhd -lib work ../rtl/and_gate.vhd -lib work ../rtl/schaltung_b.vhd -lib work ../rtl/schaltung_a.vhd -lib work ../rtl/toplevel.vhd 

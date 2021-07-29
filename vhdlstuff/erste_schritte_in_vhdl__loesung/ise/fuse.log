@@ -12,7 +12,7 @@ Parsing VHDL file "/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_v
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 97288 KB
-Fuse CPU Usage: 900 ms
+Fuse CPU Usage: 890 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -28,5 +28,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 15 VHDL Units
 Built simulation executable /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/testbench_schaltung_isim_beh.exe
 Fuse Memory Usage: 931752 KB
-Fuse CPU Usage: 1100 ms
-GCC CPU Usage: 550 ms
+Fuse CPU Usage: 1090 ms
+GCC CPU Usage: 560 ms

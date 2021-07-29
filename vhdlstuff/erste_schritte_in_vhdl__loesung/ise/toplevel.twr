@@ -43,21 +43,37 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-SWITCHES<0>    |LEDS<4>        |   10.127|
-SWITCHES<1>    |LEDS<4>        |    9.637|
-SWITCHES<2>    |LEDS<4>        |    9.150|
-SWITCHES<3>    |LEDS<4>        |    9.301|
+SWITCHES<0>    |LEDS<0>        |    9.253|
+SWITCHES<0>    |LEDS<1>        |   10.273|
+SWITCHES<0>    |LEDS<2>        |    9.583|
+SWITCHES<0>    |LEDS<3>        |    9.935|
+SWITCHES<1>    |LEDS<0>        |    8.763|
+SWITCHES<1>    |LEDS<1>        |    9.783|
+SWITCHES<1>    |LEDS<2>        |    9.093|
+SWITCHES<1>    |LEDS<3>        |    9.445|
+SWITCHES<2>    |LEDS<0>        |    8.276|
+SWITCHES<2>    |LEDS<1>        |    9.296|
+SWITCHES<2>    |LEDS<2>        |    8.606|
+SWITCHES<2>    |LEDS<3>        |    8.958|
+SWITCHES<3>    |LEDS<0>        |    8.427|
+SWITCHES<3>    |LEDS<1>        |    9.447|
+SWITCHES<3>    |LEDS<2>        |    8.757|
+SWITCHES<3>    |LEDS<3>        |    9.109|
+SWITCHES<4>    |LEDS<7>        |    9.550|
+SWITCHES<5>    |LEDS<7>        |    9.381|
+SWITCHES<6>    |LEDS<7>        |    8.968|
+SWITCHES<7>    |LEDS<7>        |    9.170|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Jul 28 10:58:38 2021 
+Analysis completed Thu Jul 29 16:48:24 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 314 MB
+Peak Memory Usage: 315 MB
 
 
 

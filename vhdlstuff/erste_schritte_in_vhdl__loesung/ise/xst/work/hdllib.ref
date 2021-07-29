@@ -1,4 +1,12 @@
-EN schaltung_b NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd sub00/vhpl00 1627462704
-AR schaltung_b behavioral /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd sub00/vhpl01 1627462705
-EN toplevel NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd sub00/vhpl02 1627462706
-AR toplevel behav /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd sub00/vhpl03 1627462707
+EN schaltung_a NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd sub00/vhpl10 1627570092
+EN schaltung_b NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd sub00/vhpl00 1627570094
+AR not_gate behavioral /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd sub00/vhpl09 1627570091
+EN not_gate NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd sub00/vhpl08 1627570090
+AR and_gate behavioral /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd sub00/vhpl05 1627570087
+AR schaltung_b behavioral /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd sub00/vhpl01 1627570095
+EN toplevel NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd sub00/vhpl02 1627570096
+AR or_gate behavioral /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd sub00/vhpl07 1627570089
+AR toplevel behav /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd sub00/vhpl03 1627570097
+EN or_gate NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd sub00/vhpl06 1627570088
+EN and_gate NULL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd sub00/vhpl04 1627570086
+AR schaltung_a behavioral /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd sub00/vhpl11 1627570093

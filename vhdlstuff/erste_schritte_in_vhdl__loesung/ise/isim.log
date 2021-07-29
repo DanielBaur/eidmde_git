@@ -1,6 +1,5 @@
 ISim log file
 Running: /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/testbench_schaltung_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/testbench_schaltung_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -9,5 +8,4 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# exit 0
 # exit 0
