@@ -39,7 +39,7 @@ resources/*
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/schaltung_b.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/signal_mapping.ucf
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/rtl/toplevel.vhd
-!vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_gates.vhd
+!*/erste_schritte_in_vhdl__vorlage/tb/testbench_gates.vhd
 !vhdlstuff/erste_schritte_in_vhdl__vorlage/tb/testbench_schaltung.vhd
 
 # exceptions: 'erste_schritte_in_vhdl__loesung'
