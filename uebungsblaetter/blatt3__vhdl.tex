@@ -157,7 +157,7 @@ und der Ausgang der Schaltung auf eine beliebige LED.
 ausgeht.
 
 
-\item Bonus: Bringen Sie alle LEDs zum Leuchten, wenn das Ergebniss von schaltung\_a oder schaltung\_b wahr ist. Nutzen Sie hierzu die others Anweisung.
+\item Bonus: Bringen Sie alle LEDs zum Leuchten, wenn das Ergebnis von \texttt{schaltung\_a} oder \text{schaltung\_b} wahr ist. Nutzen Sie hierzu die \texttt{others} Anweisung.
 
 
 \end{enumerate}
@@ -175,8 +175,7 @@ ausgeht.
 
 Das Ziel dieser Übungen ist die Realisierung einer Stoppuhrschaltung.\\
 
-Laden Sie sich dazu von der Adresse \url{https://ilias.uni-freiburg.de/goto.php?target=file_1740380_download&client_id=unifreiburg}
-das .tar-file \texttt{die\_stoppuhr.tar} herunter, entpacken Sie es und laden das Projekt in ISE DS. Alle benötigten VHDL-Module sind in diesem Projekt bereits angelegt.\\
+Laden Sie sich dazu das Projekt \textcolor{blue}{\href{https://ilias.uni-freiburg.de/goto.php?target=file_1740380_download&client_id=unifreiburg}{\texttt{die\_stoppuhr\_\_vorlage.tar.gz}}} herunter, entpacken Sie es und laden das Projekt in der ISE Design Suite. Alle benötigten VHDL-Module sind in diesem Projekt bereits angelegt.\\
 
 \textit{Hinweis}: Bitte löschen Sie am Ende der Übung die großen Dateien im Ordner \texttt{./ise/}!
 
@@ -190,26 +189,26 @@ das .tar-file \texttt{die\_stoppuhr.tar} herunter, entpacken Sie es und laden da
 
 
 Wir wollen einen dezimalen (\textit{binary coded decimal}) Zähler programieren der von 0 bis 9999 zählt.
-Betrachten Sie dazu das Modul \textit{bcd\_counter}. Der 16 bit breite Ausgang \textit{BCD\_OUT} soll dabei als vier Worte aus jeweils 4 bit aufgefasst werden. Jedes dieser Worte representiert eine Ziffer zwischen 0 und 9 und die vier Worte representieren gemeinsam den Zählerstand im Dezimalsystem.
+Betrachten Sie dazu das Modul \texttt{bcd\_counter}. Der 16 bit breite Ausgang \texttt{BCD\_OUT} soll dabei als vier Worte aus jeweils 4 bit aufgefasst werden. Jedes dieser Worte representiert eine Ziffer zwischen 0 und 9 und die vier Worte representieren gemeinsam den Zählerstand im Dezimalsystem.
 
 
 \begin{enumerate}[label=\alph*.)]
 
 
-\item Vervollständigen Sie das Modul \textit{bcd\_counter}, so dass bei jedem \textit{CLK\_en} der Wert des Ausgangs \textit{BCD\_OUT} nach obiger Auffassung um eins erhöht wird.
+\item Vervollständigen Sie das Modul \texttt{bcd\_counter}, so dass bei jedem \texttt{CLK\_en} der Wert des Ausgangs \texttt{BCD\_OUT} nach obiger Auffassung um eins erhöht wird.
 
 
-\item Implementieren Sie ein asynchrones reset, welches den Zählerstand auf null setzt, sobald der
-Eingang \textit{RST} den Wert logisch eins annimmt.
+\item Implementieren Sie ein \textit{asynchrones reset}, welches den Zählerstand auf null setzt, sobald der
+Eingang \texttt{RST} den Wert logisch eins annimmt.
 
 
-\item Verifizieren Sie das Modul mit Hilfe der Testbench \textit{tb\_bcd\_counter}. 
+\item Verifizieren Sie das Modul mit Hilfe der Testbench \texttt{tb\_bcd\_counter}. 
 
 
 \end{enumerate}
 
 
-\textit{Bemerkung}: Ignorieren Sie für den Moment den Eingang \textit{start\_stop} und das Signal \textit{was\_stopped}. Den Vektor \textit{BCD\_OUT} können Sie etwa mithilfe von \glqq \texttt{BCD\_OUT (3 downto 0)}\grqq \,\,komponentenweise referenzieren.
+\textit{Bemerkung}: Ignorieren Sie für den Moment den Eingang \texttt{start\_stop} und das Signal \texttt{was\_stopped}. Den Vektor \texttt{BCD\_OUT} können Sie etwa mithilfe von \glqq \texttt{BCD\_OUT (3 downto 0)}\grqq \,\,komponentenweise referenzieren.
 
 
 
@@ -220,17 +219,16 @@ Eingang \textit{RST} den Wert logisch eins annimmt.
 %------------------------------------------------------
 
 
-Machen Sie sich die Aufgabe und Funktionsweise des Moduls \textit{scale\_clock} klar.
+Machen Sie sich die Aufgabe und Funktionsweise des Moduls \texttt{scale\_clock} klar.
 
 
 \begin{enumerate}[label=\alph*.)]
 
 
-\item Lesen Sie den Code und simulieren Sie das Module mit Hilfe der Testbench \textit{tb\_clock\_scaler}.
+\item Lesen Sie den Code und simulieren Sie das Module mit Hilfe der Testbench \texttt{tb\_clock\_scaler}.
 
 
-\item Auf welchen Wert muss der generic \textit{limit} gesetzt werden, damit man bei
-einem eingehenden 50\,MHz Takt einen Abstand zwischen den einzelnen \textit{CLK\_10HZ\_enable} Signalen von 0,1\,s hat?
+\item Auf welchen Wert muss der generic \texttt{limit} gesetzt werden, damit sich bei einem eingehenden $50\,\mathrm{MHz}$ Takt ein Abstand zwischen den einzelnen \texttt{CLK\_10HZ\_enable} Signalen von $0{,}1\,\mathrm{s}$ ergibt?
 
 
 \end{enumerate}
@@ -244,29 +242,26 @@ einem eingehenden 50\,MHz Takt einen Abstand zwischen den einzelnen \textit{CLK\
 %------------------------------------------------------
 
 
-Machen Sie sich mit Hilfe des Spartan-3 User Guides (\href{https://www.xilinx.com/support/documentation/boards_and_kits/ug130.pdf}{UG130}) die Funktionsweise des Seven-Segment LED Displays
-klar.
+Machen Sie sich mit Hilfe des \textcolor{blue}{\href{https://www.xilinx.com/support/documentation/boards_and_kits/ug130.pdf}{Spartan 3 User Guides}} die Funktionsweise des \textit{Seven-Segment LED Displays} klar:
 
 
 \begin{enumerate}[label=\alph*.)]
 
 
-\item Vervollständigen Sie das Modul \textit{seven\_seg\_encoder}, so dass eine nicht vorzeichen-
-behaftete 4 bit Zahl in hexadezimaler Schreibweise auf dem Display angezeigt werden kann.
+\item Vervollständigen Sie zuerst das Modul \texttt{seven\_seg\_encoder}, so dass eine nicht vorzeichen-behaftete 4 bit-Zahl in hexadezimaler Schreibweise auf dem Display angezeigt werden kann.
 
 
-\item Verifizieren Sie das Modul mit Hilfe der Testbench \textit{tb\_seven\_seg}.
+\item Verifizieren Sie das Modul mit Hilfe der Testbench \texttt{tb\_seven\_seg}.
 
 
-\item Machen Sie sich mit Hilfe des User Guides mit dem ein und Auschalten der vier Display Segmente
-und dem Dezimalpunkt vertraut. Vervollständigen Sie das Modul \textit{display\_controller} 
-dessen Aufgabe es ist durch korrekte Bedienung der Steuersignale \textit{LED\_OUTPUT}, \textit{DISABLE\_LED} und \textit{DECIMAL\_POINT} einen Zählerstand \textit{COUNTER\_INPUT} auf dem Display darzustellen. Nutzen Sie hierzu das Modul 
-\textit{seven\_seg\_encoder} und lassen sie für eine geeigneten Anzahl an Taktzyklen jeweils
-eines der Display Segmente eingeschaltet (Stichwort Multiplexing). Hierzu müssen Sie einen einfachen Zähler innerhalb eines
-getakteten Prozesses nutzen.
+\item Machen Sie sich mit Hilfe des User Guides mit dem Ein- und Auschalten der vier Displaysegmente und dem Dezimalpunkt vertraut.
+Vervollständigen Sie dann das Modul \texttt{display\_controller}, dessen Aufgabe es ist, durch korrekte Bedienung der Steuersignale \texttt{LED\_OUTPUT}, \texttt{DISABLE\_LED} und \texttt{DECIMAL\_POINT} einen Zählerstand \texttt{COUNTER\_INPUT} auf dem Display darzustellen.
+Nutzen Sie hierzu das Modul \texttt{seven\_seg\_encoder} und lassen sie für eine geeigneten Anzahl an Taktzyklen jeweils
+eines der Displaysegmente eingeschaltet (\textit{Multiplexing}).
+Hierzu wird ein einfacher Zähler innerhalb eines getakteten Prozesses nutzen.
 
 
-\item Nutzen Sie die Testbench \textit{display\_controller\_tb} um das Modul zu verifizieren.
+\item Nutzen Sie die Testbench \texttt{display\_controller\_tb} um das Modul zu verifizieren.
 
 
 \end{enumerate}
@@ -280,8 +275,8 @@ getakteten Prozesses nutzen.
 %------------------------------------------------------
 
 
-Instanzieren Sie die Module \texttt{scale\_clock.vhd}, \texttt{bcd\_counter.vhd} und \texttt{display\_controller.vhd} im toplevel.
-Verbinden Sie dann die Module auf geeignete Weise, sodass auf dem Display eine dezimale Stoppuhr angezeigt wird, welche in Schritten von $0.1\,\mathrm{s}$ hochzählt und durch Drücken eines der Buttons resertiert werden kann.
+Instanzieren Sie die Module \texttt{scale\_clock}, \texttt{bcd\_counter} und \texttt{display\_controller} im Toplevel des Projektes und verbinden Sie die Module auf geeignete Weise,
+sodass auf dem Display eine dezimale Stoppuhr angezeigt wird, welche in Schritten von $0.1\,\mathrm{s}$ hochzählt und durch Drücken eines der Buttons resertiert werden kann.
 Erstellen sie abschließend das Binärfile und konfigurieren Sie den FPGA um ihr Design in der Hardware zu testen.
 
 
@@ -299,11 +294,13 @@ Die Stoppuhr soll nun dahingehend verbessert werden, dass mit dem Betätigen ein
 \begin{enumerate}[label=\alph*.)]
 
 
-\item Vervollständigen Sie das Modul \texttt{debouncing.vhd} indem Sie einen Zähler innerhalb eines getakteten Prozesses nutzen um einen Button zu entprellen. Simulieren Sie das Modul mit der Testbench \texttt{tb\_debouncing.vhd}.
+\item Vervollständigen Sie das Modul \texttt{debouncing} indem Sie einen Zähler innerhalb eines getakteten Prozesses nutzen, um einen Button zu \textit{entprellen}.
+Simulieren Sie das Modul mit der Testbench \texttt{tb\_debouncing}.
 
 
-\item Widmen Sie sich nun dem Eingang \textit{start\_stop} des Moduls \texttt{bcd\_counter.vhd}:\\
-Implementieren Sie mithilfe des Signals \textit{was\_stopped} ein Stoppen und Starten des Zählers falls der Eingang \textit{start\_stop} auf eins wechselt. Simulieren Sie das Modul erneut mit der Testbench \texttt{tb\_bcd\_counter.vhd}.
+\item Widmen Sie sich nun dem Eingang \texttt{start\_stop} des Moduls \texttt{bcd\_counter}:\\
+Implementieren Sie mithilfe des Signals \texttt{was\_stopped} ein Stoppen und Starten des Zählers, falls der Eingang \texttt{start\_stop} auf eins wechselt.
+Simulieren Sie das Modul erneut mit der Testbench \texttt{tb\_bcd\_counter}.
 
 
 \item Instanzieren Sie das Modul \texttt{debouncing.vhd} im Toplevel unter geigneter Verbindung mit einem Button und dem Modul \texttt{bcd\_counter}, so dass das Ziel der Aufgabe erreicht wird und testen Sie ihr Ergebniss in der Hardware.
