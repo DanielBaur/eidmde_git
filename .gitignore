@@ -83,13 +83,13 @@ vhdlstuff/erste_schritte_in_vhdl__loesung/tb/*
 
 # exceptions: 'die_stoppuhr__vorlage'
 !vhdlstuff/die_stoppuhr__vorlage
-vhdlstuff/die_stoppuhr__vorlage/*
-!vhdlstuff/die_stoppuhr__vorlage/ise
-!vhdlstuff/die_stoppuhr__vorlage/rtl
-!vhdlstuff/die_stoppuhr__vorlage/tb
-vhdlstuff/die_stoppuhr__vorlage/ise/*
-vhdlstuff/die_stoppuhr__vorlage/rtl/*
-vhdlstuff/die_stoppuhr__vorlage/tb/*
+#vhdlstuff/die_stoppuhr__vorlage/*
+#!vhdlstuff/die_stoppuhr__vorlage/ise
+#!vhdlstuff/die_stoppuhr__vorlage/rtl
+#!vhdlstuff/die_stoppuhr__vorlage/tb
+#vhdlstuff/die_stoppuhr__vorlage/ise/*
+#vhdlstuff/die_stoppuhr__vorlage/rtl/*
+#vhdlstuff/die_stoppuhr__vorlage/tb/*
 
 !vhdlstuff/die_stoppuhr__vorlage/rtl/bcd_counter.vhd
 !vhdlstuff/die_stoppuhr__vorlage/rtl/clock_scaler.vhd
@@ -106,13 +106,13 @@ vhdlstuff/die_stoppuhr__vorlage/tb/*
 
 # exceptions: 'die_stoppuhr__loesung'
 !vhdlstuff/die_stoppuhr__loesung
-vhdlstuff/die_stoppuhr__loesung/*
-!vhdlstuff/die_stoppuhr__loesung/ise
-!vhdlstuff/die_stoppuhr__loesung/rtl
-!vhdlstuff/die_stoppuhr__loesung/tb
-vhdlstuff/die_stoppuhr__loesung/ise/*
-vhdlstuff/die_stoppuhr__loesung/rtl/*
-vhdlstuff/die_stoppuhr__loesung/tb/*
+#vhdlstuff/die_stoppuhr__loesung/*
+#!vhdlstuff/die_stoppuhr__loesung/ise
+#!vhdlstuff/die_stoppuhr__loesung/rtl
+#!vhdlstuff/die_stoppuhr__loesung/tb
+#vhdlstuff/die_stoppuhr__loesung/ise/*
+#vhdlstuff/die_stoppuhr__loesung/rtl/*
+#vhdlstuff/die_stoppuhr__loesung/tb/*
 !vhdlstuff/die_stoppuhr__loesung/rtl/bcd_counter.vhd
 !vhdlstuff/die_stoppuhr__loesung/rtl/clock_scaler.vhd
 !vhdlstuff/die_stoppuhr__loesung/rtl/constraints.ucf

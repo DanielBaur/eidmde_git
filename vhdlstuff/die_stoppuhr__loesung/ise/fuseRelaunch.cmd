@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/ise/display_controller_tb_isim_beh.exe" -prj "/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/ise/display_controller_tb_beh.prj" "work.display_controller_tb" 

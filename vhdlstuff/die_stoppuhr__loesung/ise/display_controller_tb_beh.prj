@@ -1,0 +1,3 @@
+vhdl work "../rtl/seven_seg_encoder.vhd"
+vhdl work "../rtl/display_controller.vhd"
+vhdl work "../tb/tb_display_controller.vhd"
