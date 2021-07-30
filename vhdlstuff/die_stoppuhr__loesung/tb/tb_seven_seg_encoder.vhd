@@ -1,9 +1,26 @@
+
+-- --------------------------------------------
+-- libraries
+-- --------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
+
+
+-- --------------------------------------------
+-- entity
+-- --------------------------------------------
+
 entity tb_seven_seg is
 end entity tb_seven_seg;
+
+
+
+-- --------------------------------------------
+-- architecture
+-- --------------------------------------------
 
 architecture behav of tb_seven_seg is
 

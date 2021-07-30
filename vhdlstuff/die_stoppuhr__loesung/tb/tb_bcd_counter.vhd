@@ -1,8 +1,26 @@
+
+
+-- --------------------------------------------
+-- libraries
+-- --------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 
+
+
+-- --------------------------------------------
+-- entity
+-- --------------------------------------------
+
 entity tb_bcd_counter is
 end tb_bcd_counter;
+
+
+
+-- --------------------------------------------
+-- architecture
+-- --------------------------------------------
 
 architecture behavior of tb_bcd_counter is
 
@@ -48,8 +66,6 @@ begin
 	 
   end process;
 
-  
-
   -- Stimulus process
   stim_proc : process
   begin
@@ -64,8 +80,6 @@ begin
 	 start_stop<='1';
 	 wait for clk_period/2;
 	 start_stop<='0';
-	 
-	 
 	 wait;
   end process;
 

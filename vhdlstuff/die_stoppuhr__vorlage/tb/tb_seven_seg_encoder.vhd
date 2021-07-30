@@ -1,9 +1,26 @@
+
+-- --------------------------------------------
+-- libraries
+-- --------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
+
+
+-- --------------------------------------------
+-- entity
+-- --------------------------------------------
+
 entity tb_seven_seg is
 end entity tb_seven_seg;
+
+
+
+-- --------------------------------------------
+-- architecture
+-- --------------------------------------------
 
 architecture behav of tb_seven_seg is
 
@@ -13,15 +30,12 @@ architecture behav of tb_seven_seg is
   -- outputs
   signal led_output : std_logic_vector (6 downto 0);
   
-begin  --architecture behav
+begin
   
   uut : entity work.seven_seg_encoder
     port map (
       NUMBER_INPUT => number_input,
       LED_OUTPUT   => led_output);
-
--- purpose: stim process
--- type   : combinational
 
   stim : process is
   begin  -- process stim

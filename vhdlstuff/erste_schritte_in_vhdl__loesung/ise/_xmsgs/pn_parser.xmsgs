@@ -8,7 +8,28 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/nand_gate.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/xor_gate.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

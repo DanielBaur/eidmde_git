@@ -1,8 +1,25 @@
+
+-- --------------------------------------------
+-- libraries
+-- --------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 
+
+
+-- --------------------------------------------
+-- entity
+-- --------------------------------------------
+
 entity display_controller_tb is
 end display_controller_tb;
+
+
+
+-- --------------------------------------------
+-- architecture
+-- --------------------------------------------
 
 architecture behavior of display_controller_tb is
 
