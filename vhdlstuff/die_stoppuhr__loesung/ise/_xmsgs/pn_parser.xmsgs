@@ -8,6 +8,21 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/rtl/bcd_counter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/rtl/clock_scaler.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/rtl/debouncing.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/rtl/display_controller.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/rtl/seven_seg_encoder.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/rtl/toplevel.vhd&quot; into library work</arg>
 </msg>
 

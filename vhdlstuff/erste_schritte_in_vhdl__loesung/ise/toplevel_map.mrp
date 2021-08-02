@@ -9,7 +9,7 @@ Target Device  : xc3s200
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Thu Jul 29 16:48:17 2021
+Mapped Date    : Fri Jul 30 14:40:49 2021
 
 Design Summary
 --------------
@@ -25,7 +25,7 @@ Logic Distribution:
   Total Number of 4 input LUTs:           2 out of   3,840    1%
   Number of bonded IOBs:                 16 out of     173    9%
 
-Average Fanout of Non-Clock Nets:                1.00
+Average Fanout of Non-Clock Nets:                0.62
 
 Peak Memory Usage:  577 MB
 Total REAL time to MAP completion:  1 secs 
@@ -73,11 +73,14 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network LEDS<4>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 2 more times for the following
+INFO:LIT:243 - Logical network LEDS<1>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 5 more times for the following
    (max. 5 shown):
+   LEDS<2>_IBUF,
+   LEDS<3>_IBUF,
    LEDS<5>_IBUF,
-   LEDS<6>_IBUF
+   LEDS<6>_IBUF,
+   LEDS<7>_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -98,13 +101,13 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | LEDS<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LEDS<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LEDS<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LEDS<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LEDS<4>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LEDS<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LEDS<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LEDS<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LEDS<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | LEDS<5>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | LEDS<6>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| LEDS<7>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LEDS<7>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | SWITCHES<0>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | SWITCHES<1>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | SWITCHES<2>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |

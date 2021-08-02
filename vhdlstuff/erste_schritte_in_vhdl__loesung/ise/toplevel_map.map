@@ -9,7 +9,7 @@ Target Device  : xc3s200
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Thu Jul 29 16:48:17 2021
+Mapped Date    : Fri Jul 30 14:40:49 2021
 
 Mapping design into LUTs...
 Running directed packing...
@@ -33,7 +33,7 @@ Logic Distribution:
   Total Number of 4 input LUTs:           2 out of   3,840    1%
   Number of bonded IOBs:                 16 out of     173    9%
 
-Average Fanout of Non-Clock Nets:                1.00
+Average Fanout of Non-Clock Nets:                0.62
 
 Peak Memory Usage:  577 MB
 Total REAL time to MAP completion:  1 secs 

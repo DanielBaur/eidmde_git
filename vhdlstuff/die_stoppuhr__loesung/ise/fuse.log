@@ -9,7 +9,7 @@ Parsing VHDL file "/home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesu
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 98936 KB
-Fuse CPU Usage: 910 ms
+Fuse CPU Usage: 870 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -23,5 +23,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 10 VHDL Units
 Built simulation executable /home/db1086/Desktop/eidmde_git/vhdlstuff/die_stoppuhr__loesung/ise/display_controller_tb_isim_beh.exe
 Fuse Memory Usage: 936908 KB
-Fuse CPU Usage: 1120 ms
-GCC CPU Usage: 390 ms
+Fuse CPU Usage: 1100 ms
+GCC CPU Usage: 430 ms

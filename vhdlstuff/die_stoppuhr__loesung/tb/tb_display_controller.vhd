@@ -65,17 +65,17 @@ begin
     wait for 100 ns;
     RESET        <= '0';
     counter_input <= x"0001";
-    wait for CLK_period*50000;
+    wait for CLK_period*5000;
     counter_input <= x"0009";
-    wait for CLK_period*50000;
+    wait for CLK_period*5000;
     counter_input <= x"0010";
-    wait for CLK_period*50000;
+    wait for CLK_period*5000;
     counter_input <= x"0089";
-    wait for CLK_period*50000;
+    wait for CLK_period*5000;
     counter_input <= x"0255";
-    wait for CLK_period*50000;
+    wait for CLK_period*5000;
     counter_input <= x"8888";
-    wait for CLK_period*50000;
+    wait for CLK_period*5000;
 
     -- insert stimulus here 
 

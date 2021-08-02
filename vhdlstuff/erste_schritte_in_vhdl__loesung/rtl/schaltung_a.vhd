@@ -31,12 +31,6 @@ architecture Behavioral of schaltung_a is
 
 begin
 
-  and1 : entity work.and_gate
-    port map (
-      A => A,
-      B => B,
-      C => ab);
-
   or1 : entity work.or_gate
     port map (
       A => ab,
@@ -48,11 +42,19 @@ begin
       A => D,
       B => nd);
 
+  and1 : entity work.and_gate
+    port map (
+      A => A,
+      B => B,
+      C => ab);
+
   and2 : entity work.and_gate
     port map (
       A => abc,
       B => nd,
-      C => Y);
+      C => abcd);
+	
+	y <= abcd;
 
 end Behavioral;
 

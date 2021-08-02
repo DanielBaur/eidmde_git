@@ -29,6 +29,9 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel_lysander.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/xor_gate.vhd&quot; into library work</arg>
 </msg>
 

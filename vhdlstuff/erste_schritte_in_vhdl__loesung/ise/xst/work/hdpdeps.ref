@@ -1,47 +1,48 @@
-V3 25
+V3 26
 FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd 2021/07/28.10:42:16 P.20131013
-EN work/and_gate 1627570086 \
+EN work/and_gate 1627648845 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/and_gate/Behavioral 1627570087 \
+AR work/and_gate/Behavioral 1627648846 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/and_gate.vhd \
-      EN work/and_gate 1627570086
+      EN work/and_gate 1627648845
 FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd 2021/07/28.10:41:54 P.20131013
-EN work/not_gate 1627570090 \
+EN work/not_gate 1627648843 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/not_gate/Behavioral 1627570091 \
+AR work/not_gate/Behavioral 1627648844 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/not_gate.vhd \
-      EN work/not_gate 1627570090
+      EN work/not_gate 1627648843
 FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd 2021/07/28.10:41:21 P.20131013
-EN work/or_gate 1627570088 \
+EN work/or_gate 1627648841 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/or_gate/Behavioral 1627570089 \
+AR work/or_gate/Behavioral 1627648842 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/or_gate.vhd \
-      EN work/or_gate 1627570088
-FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd 2021/07/28.10:53:31 P.20131013
-EN work/schaltung_a 1627570092 \
+      EN work/or_gate 1627648841
+FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd 2021/07/30.14:40:28 P.20131013
+EN work/schaltung_a 1627648847 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/schaltung_a/Behavioral 1627570093 \
+AR work/schaltung_a/Behavioral 1627648848 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_a.vhd \
-      EN work/schaltung_a 1627570092 CP work/and_gate CP work/or_gate \
-      CP work/not_gate
-FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd 2021/07/28.10:54:06 P.20131013
-EN work/schaltung_b 1627570094 \
+      EN work/schaltung_a 1627648847 CP work/or_gate CP work/not_gate \
+      CP work/and_gate
+FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd 2021/07/30.14:04:53 P.20131013
+EN work/schaltung_b 1627648849 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/schaltung_b/Behavioral 1627570095 \
+AR work/schaltung_b/Behavioral 1627648850 \
       FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd \
-      EN work/schaltung_b 1627570094
-FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd 2021/07/29.16:47:49 P.20131013
-EN work/toplevel 1627570096 \
-      FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd \
+      EN work/schaltung_b 1627648849
+FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd 2021/07/30.13:25:28 P.20131013
+FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel_lysander.vhd 2021/07/30.13:50:37 P.20131013
+EN work/toplevel 1627648851 \
+      FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel_lysander.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_misc 1381692178 \
       PB ieee/NUMERIC_STD 1381692181
-AR work/toplevel/behav 1627570097 \
-      FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd \
-      EN work/toplevel 1627570096 CP work/schaltung_a CP work/schaltung_b
+AR work/toplevel/behav 1627648852 \
+      FL /home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/rtl/toplevel_lysander.vhd \
+      EN work/toplevel 1627648851 CP work/schaltung_a CP work/schaltung_b
 FL /home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/schaltung_b.vhd 2020/08/05.23:17:24 P.20131013
 FL /home/db1086/Desktop/erste_schritte_in_vhdl__loesung/rtl/toplevel.vhd 2021/06/01.15:18:50 P.20131013

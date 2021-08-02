@@ -35,7 +35,7 @@ architecture Behavioral of display_controller is
 
   signal digit0, digit1, digit2, digit3 : std_logic_vector (3 downto 0);
   signal led_uncoded                    : unsigned (3 downto 0);
-  signal ctr                            : unsigned (12 downto 0) := (others => '0');
+  signal ctr                            : unsigned (2 downto 0) := (others => '0');
 
 begin
 

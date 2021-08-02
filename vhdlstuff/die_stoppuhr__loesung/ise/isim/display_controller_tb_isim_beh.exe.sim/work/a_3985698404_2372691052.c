@@ -142,7 +142,7 @@ LAB4:    xsi_set_current_line(66, ng0);
     t2 = (t0 + 2288U);
     t4 = *((char **)t2);
     t3 = *((int64 *)t4);
-    t10 = (t3 * 50000);
+    t10 = (t3 * 5000);
     t2 = (t0 + 3320);
     xsi_process_wait(t2, t10);
 
@@ -166,7 +166,7 @@ LAB8:    xsi_set_current_line(69, ng0);
     t2 = (t0 + 2288U);
     t4 = *((char **)t2);
     t3 = *((int64 *)t4);
-    t10 = (t3 * 50000);
+    t10 = (t3 * 5000);
     t2 = (t0 + 3320);
     xsi_process_wait(t2, t10);
 
@@ -190,7 +190,7 @@ LAB12:    xsi_set_current_line(71, ng0);
     t2 = (t0 + 2288U);
     t4 = *((char **)t2);
     t3 = *((int64 *)t4);
-    t10 = (t3 * 50000);
+    t10 = (t3 * 5000);
     t2 = (t0 + 3320);
     xsi_process_wait(t2, t10);
 
@@ -214,7 +214,7 @@ LAB16:    xsi_set_current_line(73, ng0);
     t2 = (t0 + 2288U);
     t4 = *((char **)t2);
     t3 = *((int64 *)t4);
-    t10 = (t3 * 50000);
+    t10 = (t3 * 5000);
     t2 = (t0 + 3320);
     xsi_process_wait(t2, t10);
 
@@ -238,7 +238,7 @@ LAB20:    xsi_set_current_line(75, ng0);
     t2 = (t0 + 2288U);
     t4 = *((char **)t2);
     t3 = *((int64 *)t4);
-    t10 = (t3 * 50000);
+    t10 = (t3 * 5000);
     t2 = (t0 + 3320);
     xsi_process_wait(t2, t10);
 
@@ -262,7 +262,7 @@ LAB24:    xsi_set_current_line(77, ng0);
     t2 = (t0 + 2288U);
     t4 = *((char **)t2);
     t3 = *((int64 *)t4);
-    t10 = (t3 * 50000);
+    t10 = (t3 * 5000);
     t2 = (t0 + 3320);
     xsi_process_wait(t2, t10);
 

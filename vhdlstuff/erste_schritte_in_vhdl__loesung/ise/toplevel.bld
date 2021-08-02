@@ -20,9 +20,12 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:470 - bidirect pad net 'LEDS<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'LEDS<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'LEDS<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'LEDS<3>' has no legal driver
 WARNING:NgdBuild:470 - bidirect pad net 'LEDS<5>' has no legal driver
 WARNING:NgdBuild:470 - bidirect pad net 'LEDS<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'LEDS<7>' has no legal driver
 
 Partition Implementation Status
 -------------------------------
@@ -33,9 +36,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   3
+  Number of warnings:   6
 
-Total memory usage is 391180 kilobytes
+Total memory usage is 390944 kilobytes
 
 Writing NGD file "toplevel.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec

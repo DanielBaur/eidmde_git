@@ -2,12 +2,12 @@ Command line:
    tb_seven_seg_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  37533
+     -socket  41245
 
-Fri Jul 30 11:49:12 2021
+Mon Aug  2 14:09:05 2021
 
 
- Elaboration Time: 0.04 sec
+ Elaboration Time: 0.06 sec
 
  Current Memory Usage: 248.181 Meg
 
@@ -20,9 +20,9 @@ Fri Jul 30 11:49:12 2021
  Total Traceable Variables  : 15
  Total Scalar Nets and Variables : 512
 
- Total Simulation Time: 0.12 sec
+ Total Simulation Time: 0.07 sec
 
  Current Memory Usage: 323.682 Meg
 
-Fri Jul 30 11:52:38 2021
+Mon Aug  2 14:10:45 2021
 

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-07-30T10:58:39</DateModified>
+  <DateModified>2021-08-02T13:52:46</DateModified>
   <ModuleName>toplevel</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-07-30T13:25:52</SummaryTimeStamp>
   <SavedFilePath>/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/iseconfig/toplevel.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/db1086/Desktop/eidmde_git/vhdlstuff/erste_schritte_in_vhdl__loesung/ise/</ImplementationReportsDirectory>
   <DateInitialized>2021-03-12T11:34:38</DateInitialized>
